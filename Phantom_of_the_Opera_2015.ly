@@ -34,7 +34,7 @@ PartTrack =  \relative c { %Track temps, indication tempi, reperes
     \set Score.currentBarNumber = #1
     % Permit first bar number to be printed
     \bar ""
-    \time 4/4
+    \time 4/4 \tempo 4=120
     s1*9 | \barNumberCheck #10
     s1*10 \bar "||"
     \mark \default | \barNumberCheck #20
@@ -354,6 +354,22 @@ PartPThreeVoiceOne =  \relative d''' { %Clarinet
   eis1 ~ | % 72
   eis4 d d4. cis8 | % 73
   cis1  \bar "||"
+
+  cis2 cis'8 c b bes | %75
+  a1 ~|%76
+  a2 a8 bes b c |%77
+  cis1 ~ |%78
+  cis2 cis8 c b bes |%79
+  a1 |%80
+  gis1 \bar "||"%81
+
+  % Pont
+  \key g \minor
+  g,4 c8 g8 bes8 c8 g8 f8 |%82
+  g4 c8 g bes c4 f,8 |%83
+  g4 c8 g8 bes c g f |%84
+
+
 }
 
 PartPFourVoiceOne =  \relative a' { %Hautbois
@@ -1475,6 +1491,57 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     % Couplet
     f4 r2. |%85
 
+    % A remplir
+    R1*7 |%92
+    <aes, c>1 |%93
+    c2 des2 |%94
+    <bes ees>1 |%95
+    f1 |%96
+    <bes ees>1 |%97
+    <aes c>1 |%98
+    <aes c>2 <f bes>2 |%99
+    <e g>1 |%100
+    <e g>4 <e a>2.|%101
+    aes1 |%102
+    r2 c8 b bes a |%103
+    aes1 |%104
+    r2 aes8 a bes b |%105
+    c1 |%106
+    r2 c8 b bes a |%107
+    aes1 |%108
+    aes1 |%109
+    % Plus un ton
+    \key g \minor
+    d1 ~ |%110
+    d2 d8 des c b |
+    bes1 |%112
+    r2 bes8 b c des |
+    d1 |%114
+    r2 d8 des c b |
+    bes 1 |%116
+    bes2. bes4 |
+    % Plus un ton
+    \key a \minor
+    e1 ~ |%118
+    e2 e8 ees d des |
+    c1 ~ |%120
+    c2 c8 cis d dis |
+    e1 ~ |%122
+    e2 e8 ees d des |
+    c1 ~ |%124
+    c2. c4 |
+    e1 ~ |%126
+    e2 e8 ees d des |
+    c1 ~ |%128
+    c2 c8 cis d dis |
+    e1 ~ |%130
+    e2 e8 ees d des |
+    c1 |%132
+    b2. ~ b8 b8 \bar "|."
+
+
+
+
   }
 
 PartPTwoNineVoiceTwo =  \relative d' { %Alto/ Violon II
@@ -2457,12 +2524,12 @@ bassPart = \new Staff <<
   <<
     \new StaffGroup <<
       \flutePart
-      %\clarinetPart
-      %\altosaxPart
-      %\tenorsaxPart
+      \clarinetPart
+      \altosaxPart
+      \tenorsaxPart
     >>
     \new StaffGroup <<
-    %  \trumpetPart
+    \trumpetPart
     %  \hornPart
     %  \trombonePart
     %  \tubaPart
@@ -2478,7 +2545,7 @@ bassPart = \new Staff <<
   >>
   \layout {}
   % To create MIDI output, uncomment the following line:
-  %  \midi {}
+  \midi {}
 }
 }
 

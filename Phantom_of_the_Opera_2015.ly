@@ -233,58 +233,61 @@ PartPTwoVoiceOne =  \relative c''' { %Flute
   fis1 \bar "||"%81
   % Pont
   \key f \minor
-  R1 | R1 |  R1 |%84
+  R1 | %82
   % Reprise
-  r4 c4 f4 c4 |%85
-  ees4. des8 des2 ~ |%86
-  des4 bes4 ees4 bes |%87
-  c1 |%88
-  r4 c4 f c |%89
-  ees4. des8 des2 ~ |%90
-  des4 bes4 ees4 bes |%91
-  c1 |%92
-  r4 c4 f4 gis4 |%93
-  c4. bes8 bes2 ~ |%94
-  bes4 bes ees4. bes8 |%95
-  c1 ~ |%96
-  c2 r4 c,4 |%97
-  f1 ~|%98
-  f8 ees des c bes gis g f |%99
-  e1 ~ |%100
-  e4 des'4 des4. c8 |%101
-  c1 |%102
+  r4 c4 f4 c4 |%83
+  ees4. des8 des2 ~ |%84
+  des4 bes4 ees4 bes |%85
+  c1 |%86
+  r4 c4 f c |%87
+  ees4. des8 des2 ~ |%88
+  des4 bes4 ees4 bes |%89
+  c1 |%90
+  r4 c4 f4 gis4 |%91
+  c4. bes8 bes2 ~ |%92
+  bes4 bes ees4. bes8 |%93
+  c1 ~ |%94
+  c2 r4 c,4 |%95
+  f1 ~|%96
+  f8 ees des c bes gis g f |%97
+  e1 ~ |%98
+  e4 des'4 des4. c8 |%99
+  c1 |%100
   % Fin couplet
-  r2 f8 e ees d |%103
-  des1 |%104
-  r2 des8 d ees e |%105
-  f1 |%106
-  r2 f8 e ees d |%107
-  des1 ~ |%108
-  des1 |%109
+  r2 f8 e ees d |%101
+  des1 |%102
+  r2 des8 d ees e |%103
+  f1 |%104
+  r2 f8 e ees d |%105
+  des1 |%106
+  r2 des8 d ees e |%107
   % Plus un ton
-  g1 ~ |%110
-  g2 ~ g8 fis f e |%111
-  ees1 |%112
-  r2 ees8 e f fis |%113
-  g1 |%114
-  r2 g8 fis f e |%115
-  ees1 ~ |%116
-  ees2. ees4 |%117
-  a1 ~ |%118
-  a2 ~ a8 aes g fis |%119
-  f1 |%120
-  r2 f8 fis g gis |%121
-  a1 |%122
-  r2 a8 aes g fis |%123
-  f1 ~ |%124
-  f2. f4 |%125
-  a1 |%126
-  r2 a8 aes g fis |%127
-  f1 |%128
-  r2 f8 fis g gis |%129
-  a1 |%130
-  r2 a8 aes g fis |%131
-  f1 |%132
+  f1 ~ |%108
+  f2 ~ f8 e ees d |%109
+  des1 |%110
+  r2. des4 |%111
+  \key g \minor
+  g1 |%112
+  r2 g8 fis f e |%113
+  ees1 ~ |%114
+  ees2 ees8 e f fis |%115
+
+  g1 ~ |%116
+  g2 ~ g8 ges f e |%117
+  ees1 |%118
+  r2. ees4 |%119
+  \key a \minor
+  a1 |%120
+  r2 a8 aes g fis |%121
+  f1 ~ |%122
+  f2. f4 |%123
+  a1 |%124
+  r2 a8 aes g fis |%125
+  f1 |%126
+  r2 f8 fis g gis |%127
+  a1 |%128
+  r2 a8 aes g fis |%129
+  f1 |%130
   e2. ~ e8 e8 \bar "|."
 
 }
@@ -366,8 +369,7 @@ PartPThreeVoiceOne =  \relative d''' { %Clarinet
   % Pont
   \key g \minor
   g,4 c8 g8 bes8 c8 g8 f8 |%82
-  g4 c8 g bes c4 f,8 |%83
-  g4 c8 g8 bes c g f |%84
+  g4 r2. |%83
 
 
 }
@@ -1328,59 +1330,60 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     % Pont
     \key f \minor
     f'4 bes8 f8 aes8 bes8 f8 ees8 |%82
-    f4 bes8 f aes bes4 ees,8 |%83
-    f4 bes8 f8 aes bes f ees |%84
     % Couplet
-    f4 r2. |%85
+    f4 r2. |%83
+    r1 |%84
+    r1 |%85
     r1 |%86
     r1 |%87
     r1 |%88
     r1 |%89
     r1 |%90
-    r1 |%91
-    r1 |%92
-    r4 c4 f4 gis4 |%93
-    c4. bes8 bes2 ~ |%94
-    bes4 bes ees4. bes8 |%95
-    c1 ~ |%96
-    c2 r4 c,4 |%97
-    f1 ~|%98
-    f8 ees des c bes gis g f |%99
-    e1 ~ |%100
-    e4 des'4 des4. c8 |%101
-    c1 |%102
+    r4 c4 f4 gis4 |%91
+    c4. bes8 bes2 ~ |%92
+    bes4 bes ees4. bes8 |%93
+    c1 ~ |%94
+    c2 r4 c,4 |%95
+    f1 ~|%96
+    f8 ees des c bes gis g f |%97
+    e1 ~ |%98
+    e4 des'4 des4. c8 |%99
+    c1 |%100
     % Fin couplet
-    r2 f8 e ees d |%103
-    des1 |%104
-    r2 des8 d ees e |%105
-    f1 |%106
-    r2 f8 e ees d |%107
-    des1 ~ |%108
-    des1 |%109
+    r2 f8 e ees d |%101
+    des1 |%102
+    r2 des8 d ees e |%103
+    f1 |%104
+    r2 f8 e ees d |%105
+    des1 ~ |%106
+    des2 des8 d ees e |%107
+
+    f1 ~ |%108
+    f2 ~ f8 e ees d |%109
+    des1 |%110
+    r2. des4 |%111
     % Plus un ton
-    g1 ~ |%110
-    g2 ~ g8 fis f e |%111
-    ees1 |%112
-    r2 ees8 e f fis |%113
-    g1 |%114
-    r2 g8 fis f e |%115
-    ees1 ~ |%116
-    ees2. ees4 |%117
-    a1 ~ |%118
-    a2 ~ a8 aes g fis |%119
-    f1 |%120
-    r2 f8 fis g gis |%121
-    a1 |%122
-    r2 a8 aes g fis |%123
-    f1 ~ |%124
-    f2. f4 |%125
-    a1 |%126
-    r2 a8 aes g fis |%127
-    f1 |%128
-    r2 f8 fis g gis |%129
-    a1 |%130
-    r2 a8 aes g fis |%131
-    f1 |%132
+    \key g \minor
+    g1 |%112
+    r2 g8 fis f e |%113
+    ees1 ~ |%114
+    ees2 ees8 e f fis |%115
+    g1 ~ |%116
+    g2 ~ g8 ges f e |%117
+    ees1 |%118
+    r2. ees4 |%119
+    \key a \minor
+    a1 |%120
+    r2 a8 aes g fis |%121
+    f1 ~ |%122
+    f2. f4 |%123
+    a1 |%124
+    r2 a8 aes g fis |%125
+    f1 |%126
+    r2 f8 fis g gis |%127
+    a1 |%128
+    r2 a8 aes g fis |%129
+    f1 |%130
     e2. ~ e8 e8 \bar "|."
 
 
@@ -1486,57 +1489,58 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     % Pont
     \key f \minor
     f'4 bes8 f8 aes8 bes8 f8 ees8 |%82
-    f4 bes8 f aes bes4 ees,8 |%83
-    f4 bes8 f8 aes bes f ees |%84
     % Couplet
-    f4 r2. |%85
+    f4 r2. |%83
 
     % A remplir
-    R1*7 |%92
-    <aes, c>1 |%93
-    c2 des2 |%94
+    R1*7 |%90
+    <aes, c>1 |%91
+    c2 des2 |%92
+    <bes ees>1 |%93
+    f1 |%94
     <bes ees>1 |%95
-    f1 |%96
-    <bes ees>1 |%97
-    <aes c>1 |%98
-    <aes c>2 <f bes>2 |%99
-    <e g>1 |%100
-    <e g>4 <e a>2.|%101
+    <aes c>1 |%96
+    <aes c>2 <f bes>2 |%97
+    <e g>1 |%98
+    <e g>4 <e a>2.|%99
+    aes1 |%100
+    r2 c8 b bes a |%101
     aes1 |%102
-    r2 c8 b bes a |%103
-    aes1 |%104
-    r2 aes8 a bes b |%105
-    c1 |%106
-    r2 c8 b bes a |%107
-    aes1 |%108
-    aes1 |%109
+    r2 aes8 a bes b |%103
+    c1 |%104
+    r2 c8 b bes a |%105
+    aes1 |%106
+    aes2 c8 cis d ees |%107
+
+    e1 ~ |%108
+    e2 e8 ees d des |
+    c1 |%110
+    r2. c4 |%111
     % Plus un ton
     \key g \minor
-    d1 ~ |%110
-    d2 d8 des c b |
-    bes1 |%112
-    r2 bes8 b c des |
-    d1 |%114
+
+    d1 |%112
     r2 d8 des c b |
-    bes 1 |%116
-    bes2. bes4 |
+    bes 1 |%114
+    bes2 bes8 b c cis |
+
+    d1 ~ |%116
+    d2 d8 des c b |
+    bes1 ~ |%118
+    bes2. bes4 |%119
     % Plus un ton
     \key a \minor
-    e1 ~ |%118
+    e1 ~ |%120
     e2 e8 ees d des |
-    c1 ~ |%120
-    c2 c8 cis d dis |
-    e1 ~ |%122
-    e2 e8 ees d des |
-    c1 ~ |%124
+    c1 ~ |%122
     c2. c4 |
-    e1 ~ |%126
+    e1 ~ |%124
     e2 e8 ees d des |
-    c1 ~ |%128
+    c1 ~ |%126
     c2 c8 cis d dis |
-    e1 ~ |%130
+    e1 ~ |%128
     e2 e8 ees d des |
-    c1 |%132
+    c1 |%130
     b2. ~ b8 b8 \bar "|."
 
 
@@ -1713,67 +1717,65 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
     % Pont
     \key f \minor
     f4 r4 r4 r8 ees,8 |%82
-    f4 r4 r8 ees4 ees8 |%83
-    f4 r4 r4 r8 ees8 |%84
+
     % Couplet
-    f4 r2. |%85
-    bes8 bes r bes bes bes r bes |%86
-    g8 g r g g g r g |%87
-    c8 c r c c c r c |%88
-    c8 c r c c c r c |%89
-    bes bes r bes bes bes r bes |%90
-    g8 g r g g g r g |%91
-    c8 c r c c c r c |%92
+    f4 r2. |%83
+    bes8 bes r bes bes bes r bes |%84
+    g8 g r g g g r g |%85
+    c8 c r c c c r c |%86
+    c8 c r c c c r c |%87
+    bes bes r bes bes bes r bes |%88
+    g8 g r g g g r g |%89
+    c8 c r c c c r c |%90
     % Refrain
-    c8 c r c c c r c |%93
-    des8 des r des des des r des |%94
-    ees8 ees r ees ees ees r ees |%95
-    f8 f r f f f r f |%96
-    f8 f r f f f r ees |%97
-    f8 f r f f f c c |%98
-    f8 f r f f f r f |%99
-    f8 f r f f f r f |%100
-    des8 des r des des des r des |%101
-    c8 c c c c c c c |%102
-    f8 f f f f e ees d |%103
-    des8 des des des des des des des |%104
-    des8 des des des des d ees e |%105
-    f8 f f f f f f f | %106
-    f8 f f f f e ees d | %107
-    des8 des des des des des des des | %108
-    des8 des des des des des des4 |%109
-    % Plus un ton
-    g8 g g g g g g g |
-    g8 g g g g ges f e |
-    ees8 ees ees ees ees ees ees ees |
-    ees8 ees ees ees ees e f fis |
-    g8 g g g g g g g |
-    g8 g g g g ges f e |
-    ees8 ees ees ees ees ees ees ees |
-    ees8 ees ees ees ees ees ees4 |
-    % Plus un ton
-    a8 a a a a a a a |
-    a8 a a a a aes g ges |
-    f8 f f f f f f f |
-    f8 f f f f fis g gis |
-    a8 a a a a a a a |
-    a8 a a a a aes g ges |
-    f8 f f f f f f f|
-    f8 f f f f f f4 |
-    %idem
-    a8 a a a a a a a |
-    a8 a a a a aes g ges |
-    f8 f f f f f f f |
-    f8 f f f f fis g gis |
-    a8 a a a a a a a |
-    a8 a a a a aes g ges |
-    f8 f f f f f f f|
+    c8 c r c c c r c |%91
+    des8 des r des des des r des |%92
+    ees8 ees r ees ees ees r ees |%93
+    f8 f r f f f r f |%94
+    f8 f r f f f r ees |%95
+    f8 f r f f f c c |%96
+    f8 f r f f f r f |%97
+    f8 f r f f f r f |%98
+    des8 des r des des des r des |%99
+    c8 c c c c c c c |%100
+    f8 f f f f e ees d |%101
+    des8 des des des des des des des |%102
+    des8 des des des des d ees e |%103
+    f8 f f f f f f f | %104
+    f8 f f f f e ees d | %105
+    des8 des des des des des des des | %106
+    des8 des des des des d ees e |%107
+    % Plus un ton -> Annulation changement de tonalité ici
+    f8 f f f f f f f |%108
+    f8 f f f f fes ees d |%109
+    des8 des des des des des des des |%110
+    des8 des des des des des des4 |%111
+    % Nouveau changement de tonalité ici : plus un ton
+    \key g \minor
+    g8 g g g g g g g |%112
+    g8 g g g g ges f e |%113
+    ees8 ees ees ees ees ees ees ees |%114
+    ees8 ees ees ees ees e f fis |%115
+    % Plus un ton : Non pas ici
+    g8 g g g g g g g |%116
+    g8 g g g g ges f e |%117
+    ees8 ees ees ees ees ees ees ees |%118
+    ees8 ees ees ees ees ees ees4 |%119
+    % Mais ici : plus un ton
+    \key a \minor
+    a8 a a a a a a a |%120
+    a8 a a a a aes g ges |%121
+    f8 f f f f f f f|%122
+    f8 f f f f f f4 |%123
+
+    a8 a a a a a a a |%124
+    a8 a a a a aes g ges |%125
+    f8 f f f f f f f |%126
+    f8 f f f f fis g gis |%127
+    a8 a a a a a a a |%128
+    a8 a a a a aes g ges |%129
+    f8 f f f f f f f|%130
     e8 e e e e e e e \bar "|."
-
-
-
-
-
 
   }
 

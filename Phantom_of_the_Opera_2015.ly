@@ -8,8 +8,8 @@
   encodingdate = "2014-05-21"
   tagline=""
   title="The Phantom of the Opera"
+  subtitle="version 2015.1"
   composer="Andrew Lloyd Weber"
-  arranger="Arr. Adrian Blake"
 }
 
 \paper {
@@ -54,108 +54,13 @@ PartTrack =  \relative c { %Track temps, indication tempi, reperes
     s1*6 | \barNumberCheck #70
     s1 | % 71
     s1 | % 72
-    s1-"Rit." | % 73
-    s1  \bar "||"
+    s1 \mark \default \bar "||" % 73
+    s1  | %74
+    s1*7 \mark \default \bar "||" %81
+    s1*30 \mark \default \bar "||" %111
+    s1*8 \mark \default \bar "||"%119
+    s1*12 \bar "|."
   }
-
-PartPOneVoiceOne =  \relative c''' { %Piccolo
-  \clef "treble^8" \key f \major \time 4/4 | % 1
-  R1*4 | % 5
-  c8  \f -. g -. a -. bes
-  -. c8 -. g -. a -. bes -. | % 6
-  c8 -. g -. a -. bes -. d -. des -. c -. bes -. | % 7
-  bes8 -. f -. g -. a -. bes -. f -. g -. a -. | % 8
-  \key f \major bes8 -. f -. g -. a -. bes -. f -. g -. a -.
-  \bar "||"
-  | % 9
-  a1 \> ~ | \barNumberCheck #10
-  a1 \! ~ | % 11
-  \key f \major a1 | % 12
-  a1 \mp | % 13
-  R1*2 | % 15
-  \key f \major R1*4 | % 19
-  \key f \major R1 \bar "||"  \barNumberCheck #20
-  r4 a \f -> d -> f -> | % 21
-  a4. -> g8 -> g2 ~ -> | % 22
-  g4 g -> c4. -> g8 -> | % 23
-  \key f \major a1 ~ -> | % 24
-  a2 r4 a -> | % 25
-  d1 ~ -> | % 26
-  d8 c -> bes -> a -> g -> f -> e -> d -> | % 27
-  \key f \major cis1 ~ -> | % 28
-  cis4 bes bes4. a8 | % 29
-  a1 | \barNumberCheck #30
-  \key f \major r2 <a' d>8 -. <gis cis> -. <g c> -. <fis b> -. | % 31
-  <f bes>1 | % 32
-  <es as>8 <f bes> r4 <as des>8 -. <g c> -. <fis b> -. <f bes> -.
-  | % 33
-  \key bes \major | % 33
-  <d g>1 | % 34
-  <bes g'>1 \p | % 35
-  g'1 | % 36
-  <f a>1 | % 37
-  <d g>1 ~ ~ | % 38
-  <d g>4 <d g> <c bes'> <d a'> | % 39
-  <c g'>2 <d g> ~ ~ | \barNumberCheck #40
-  <d g>2 <es a> | % 41
-  R1 \bar "||"
-   | % 42
-  r4 d, \f g bes | % 43
-  d4. c8 c2 ~ | % 44
-  c4 c f4. c8 | % 45
-  d1 ~ | % 46
-  d2 r4 d | % 47
-  g1 ~ | % 48
-  g8 f es d c bes a g | % 49
-  fis1 ~ | \barNumberCheck #50
-  fis4 es es4. d8 | % 51
-  d1 | % 52
-  r2 <d' g>8 \mf -. <cis fis> -. <c f> -. <bes e> -. | % 53
-  <bes es>1 | % 54
-  <d fis>1 | % 55
-  \key g \major | % 55
-  R1*9 \bar "||"
-   | % 64
-  r4 b e, g | % 65
-  b4. a a4 ~ | % 66
-  a4 a d4. a8 | % 67
-  b1 ~ | % 68
-  b2 r4 b | % 69
-  e1 ~ | \barNumberCheck #70
-  e8 d c b a g fis e | % 71
-  dis1 ~ | % 72
-  dis4  c' c4. b8  | % 73
-  b1
-  \bar "||"
-}
-
-PartPOneVoiceTwo =  \relative c''' { %Piccolo
-  \clef "treble^8" \key f \major \time 4/4 | % 1
-  s1*4 | % 5
-  \key f \major | % 5
-  s1*3 \f | % 8
-  \key f \major s1 \bar "||"
-  \mark \markup { \box { 9 } } s1 \> s \! | % 11
-  \key f \major s1 | % 12
-  s1*3 \mp | % 15
-  \key f \major s1*4 | % 19
-  \key f \major s1 \bar "||"
-  \mark \markup { \box { 20 } } s4 s4*11 \f | % 23
-  \key f \major s1*4 | % 27
-  \key f \major s1*2 s1 | \barNumberCheck #30
-  \key f \major s1*3 | % 33
-  \key bes \major | % 33
-  \mark \markup { \box { 33 } } s1 | % 34
-  s1 \p | % 35
-  c2 es s1*2 s1*4 \bar "||"
-  \mark \markup { \box { 42 } } s4 s4*23 \f s2*9 s2*5 \mf | % 55
-  \key g \major | % 55
-  \mark \markup { \box { 55 } } s1 s1*8 \bar "||"
-  \mark \markup { \box { 64 } } s1 s1*7 | % 72
-  s4 -"Rit....................."  s  s4.
-  s8  | % 73
-  s1  \bar "||"
-}
 
 PartPTwoVoiceOne =  \relative c''' { %Flute
   \clef "treble" \key f \major \time 4/4 R1*4 | % 5
@@ -220,8 +125,8 @@ PartPTwoVoiceOne =  \relative c''' { %Flute
   e1 ~ | \barNumberCheck #70
   e8 d c b a g fis e | % 71
   dis1 ~ | % 72
-  dis4 c c4. b8 | % 73
-  b1  \bar "||" %74
+  dis4 c c4. b8 \bar "||" % 73
+  b1  | %74
 
   % Partie ajoutee 2015
   b2 b'8 bes a aes | %75
@@ -265,7 +170,7 @@ PartPTwoVoiceOne =  \relative c''' { %Flute
   f1 ~ |%108
   f2 ~ f8 e ees d |%109
   des1 |%110
-  r2. des4 |%111
+  r2. des4 \bar "||"%111
   \key g \minor
   g1 |%112
   r2 g8 fis f e |%113
@@ -275,7 +180,7 @@ PartPTwoVoiceOne =  \relative c''' { %Flute
   g1 ~ |%116
   g2 ~ g8 ges f e |%117
   ees1 |%118
-  r2. ees4 |%119
+  r2. ees4 \bar "||"%119
   \key a \minor
   a1 |%120
   r2 a8 aes g fis |%121
@@ -300,7 +205,7 @@ PartPTwoVoiceTwo =  \relative g''' { %Flute
   \key bes \major s1*5 s1*4 \bar "||"
   s4 s4*23 s2*9 s2*5 | % 55
   \key g \major s1 s4 s4*31  \bar "||"
-  s4 s2.  s1*9 \bar "||"
+  s4 s2.  s1*8 \bar "||" s1 |
 }
 
 PartPThreeVoiceOne =  \relative d''' { %Clarinet
@@ -355,8 +260,8 @@ PartPThreeVoiceOne =  \relative d''' { %Clarinet
   fis1 ~ | \barNumberCheck #70
   fis8 e d cis b a gis fis | % 71
   eis1 ~ | % 72
-  eis4 d d4. cis8 | % 73
-  cis1  \bar "||"
+  eis4 d d4. cis8 \bar "||" % 73
+  cis1  | %74
 
   cis2 cis'8 c b bes | %75
   a1 ~|%76
@@ -371,76 +276,59 @@ PartPThreeVoiceOne =  \relative d''' { %Clarinet
   g,4 c8 g8 bes8 c8 g8 f8 |%82
   g4 r2. |%83
 
+  r1 | %84
+  r1 | %85
+  r1 | %86
+  r1 | %87
+  r1 | %88
+  r1 | %89
+  r1 | %90
+  r1 | %91
+  r1 |%92
+  r1 |%93
+  r1 |%94
+  r1 |%95
+  r1 |%96
+  r1 |%97
+  r1 |%98
+  r1 |%99
+  r1 |%100
+  r1 |%101
+  r1 |%102
+  r1 |%103
+  r1 |%104
+  r1 |%105
+  r1 |%106
+  r1 |%107
+  r1 |%108
+  r1 |%109
+  r1 |%110
+  r1 \bar "||"%111
+  \key a \minor
+  r1 |%112
+  r1 |%113
+  r1 |%114
+  r1 |%115
+  r1 |%116
+  r1 |%117
+  r1 |%118
 
-}
+  r1 \bar "||"%119
+  \key b \minor
+  r1 |%120
+  r1 |%121
+  r1 | %122
+  r1 |%123
+  r1 |%124
+  r1 |%125
+  r1 |%126
+  r1 |%127
+  r1 |%128
+  r1 |%129
+  r1 |%130
+  r1 \bar "|."
 
-PartPFourVoiceOne =  \relative a' { %Hautbois
-  \clef "treble" \key f \major \time 4/4 | % 1
-  <a d>1 \mf ~ ~ | % 2
-  <a d>4.. r16 <a d>8 -. <as des> -. <g c> -. <fis b> -. | % 3
-  <f bes>1 ~ ~ | % 4
-  <f bes>4.. r16 <f bes>8 -. <ges b> -. <g c> -. <as cis> -. | % 5
-  <a d>1 ~ ~ | % 6
-  <a d>2 <a d>8 -. <as des> -. <g c> -. <fis b> -. | % 7
-  <f bes>1 | % 8
-  <es as>8 <f bes> r4 <f bes>8 -. <ges b> -. <g c> -. <as cis> -.
-  \bar "||"
-  <a d>1 \> ~ ~ | \barNumberCheck #10
-  <a d>1 \! | % 11
-  R1*9 \bar "||"
-  r4 a \mf -> d -> f -> | % 21
-  a4. -> g8 -> g2 ~ -> | % 22
-  g4 g -> c4. -> g8 -> | % 23
-  a1 ~ -> | % 24
-  a2 r4 a -> | % 25
-  d1 ~ -> | % 26
-  d8 c -> bes -> a -> g -> f -> e -> d -> | % 27
-  cis1 ~ -> | % 28
-  cis4 bes bes4. a8 | % 29
-  a1 | \barNumberCheck #30
-  r2 <a d>8 \mf -. <gis cis> -. <g c> -. <fis b> -. | % 31
-  <f bes>1 | % 32
-  <es as>8 <f bes> r4 <as des>8 -. <g c> -. <fis b> -. <f bes> -.
-  | % 33
-  \key bes \major <d g>1 | % 34
-  R1*8 \bar "||"
-  r2 <bes' d> \mp | % 43
-  <es, g>1 | % 44
-  a1 | % 45
-  <g bes>1 | % 46
-  <g a>1 | % 47
-  <g bes>1 | % 48
-  <es bes'>1 | % 49
-  <es a>1 ~ ~ | \barNumberCheck #50
-  <es a>2 <es a> | % 51
-  bes'1 \mf ~ | % 52
-  bes2 bes8 -. bes -. a -. gis -. | % 53
-  g1 | % 54
-  fis1 | % 55
-  \key g \major R1*9 \bar "||"
-  r2 g | % 65
-  e1 | % 66
-  fis1 | % 67
-  g1 ~ | % 68
-  g1 | % 69
-  b1 | \barNumberCheck #70
-  a1 | % 71
-  fis1 ~ | % 72
-  fis4 fis fis2 | % 73
-  b,1  \bar "||"
-}
 
-PartPFourVoiceTwo =  \relative g' { %Hautbois
-  \clef "treble" \key f \major \time 4/4 | % 1
-  s1*8 \mf \bar "||"
-  s1 \> s1*9 \! s1 \bar "||"
-  s4 s4*35 \mf s1. s2*5 \mf | % 33
-  \key bes \major s1*5 s1*4 \bar "||"
-  s2 s1. \mp | % 44
-  g2 es s1*3 s | % 51
-  s1*4 \mf | % 55
-  \key g \major s1 s1*8 \bar "||"
-  s1 s1*9  \bar "||"
 }
 
 PartPFiveVoiceOne =  \relative fis'' { %Sax alto
@@ -513,8 +401,76 @@ PartPFiveVoiceOne =  \relative fis'' { %Sax alto
   <e gis>1 | \barNumberCheck #70
   <cis fis>1 | % 71
   <a dis>1 ~ ~ | % 72
-  <a dis>4 <fis dis'> <fis dis'>2 | % 73
-  <e gis>1 \mf  \bar "||"
+  <a dis>4 <fis dis'> <fis dis'>2 \bar "||" % 73
+  <e gis>1 \mf  | %74
+
+  r1 | %75
+  r1|%76
+  r1 |%77
+  r1 |%78
+  r1 |%79
+  r1 |%80
+  r1 \bar "||"%81
+
+  % Pont
+  \key d \minor
+  r1 |%82
+
+
+  % Reprise
+  r4 a4 d4 a4 |%83
+  c4. bes8 bes2 ~ |%84
+  bes4 g4 c4 g |%85
+  a1 |%86
+  r4 a4 d a |%87
+  c4. bes8 bes2 ~ |%88
+  bes4 g4 c4 g |%89
+  a1 |%90
+
+  r1 | %91
+  r1 |%92
+  r1 |%93
+  r1 |%94
+  r1 |%95
+  r1 |%96
+  r1 |%97
+  r1 |%98
+  r1 |%99
+  r1 |%100
+  r1 |%101
+  r1 |%102
+  r1 |%103
+  r1 |%104
+  r1 |%105
+  r1 |%106
+  r1 |%107
+  r1 |%108
+  r1 |%109
+  r1 |%110
+  r1 \bar "||"%111
+  \key e \minor
+  r1 |%112
+  r1 |%113
+  r1 |%114
+  r1 |%115
+  r1 |%116
+  r1 |%117
+  r1 |%118
+
+  r1 \bar "||"%119
+  \key fis \minor
+  r1 |%120
+  r1 |%121
+  r1 | %122
+  r1 |%123
+  r1 |%124
+  r1 |%125
+  r1 |%126
+  r1 |%127
+  r1 |%128
+  r1 |%129
+  r1 |%130
+  r1 \bar "|."
 }
 
 PartPFiveVoiceTwo =  \relative b' { %Sax alto
@@ -541,8 +497,8 @@ PartPFiveVoiceTwo =  \relative b' { %Sax alto
   e4 e dis e s1 | % 62
   cis2 b s1 \bar "||"
   s1 s | % 66
-  b2 gis s1*6 | % 73
-  s1 \mf  \bar "||"
+  b2 gis s1*6 \bar "||" % 73
+  s1 \mf  |
 }
 
 PartPSixVoiceOne =  \relative g'' { %Sax tenor
@@ -688,8 +644,74 @@ PartPOneZeroVoiceOne =  \relative b' { %Trompette
   fis1 ~ | \barNumberCheck #70
   fis8 e d cis b a gis fis | % 71
   eis1 ~ | % 72
-  eis4 r r2 | % 73
-  R1  \bar "||"
+  eis4 r r2 \bar "||" % 73
+  R1  | %74
+
+  r1 | %75
+  r1|%76
+  r1 |%77
+  r1 |%78
+  r1 |%79
+  r1 |%80
+  r1 \bar "||"%81
+
+  % Pont
+  \key g \minor
+  r1 |%82
+  r1 |%83
+
+  r1 | %84
+  r1 | %85
+  r1 | %86
+  r1 | %87
+  r1 | %88
+  r1 | %89
+  r1 | %90
+  r1 | %91
+  r1 |%92
+  r1 |%93
+  r1 |%94
+  r1 |%95
+  r1 |%96
+  r1 |%97
+  r1 |%98
+  r1 |%99
+  r1 |%100
+  r1 |%101
+  r1 |%102
+  r1 |%103
+  r1 |%104
+  r1 |%105
+  r1 |%106
+  r1 |%107
+  r1 |%108
+  r1 |%109
+  r1 |%110
+  r1 \bar "||" %111
+  \key a \minor
+  r1 |%112
+  r1 |%113
+  r1 |%114
+  r1 |%115
+  r1 |%116
+  r1 |%117
+  r1 |%118
+
+  r1 \bar "||"%119
+  \key b \minor
+  r1 |%120
+  r1 |%121
+  r1 | %122
+  r1 |%123
+  r1 |%124
+  r1 |%125
+  r1 |%126
+  r1 |%127
+  r1 |%128
+  r1 |%129
+  r1 |%130
+  r1 \bar "|."
+
 }
 
 PartPOneZeroVoiceTwo =  \relative e' { %Trompette
@@ -704,197 +726,8 @@ PartPOneZeroVoiceTwo =  \relative e' { %Trompette
   \key c \major s1*5 s1*4 \bar "||"
   s4 s4*23 s2*9 s2*5 | % 55
   \key a \major s1 s1*8 \bar "||"
-  s4 s2. \f s1*9  \bar "||"
+  s4 s2. \f s1*8  \bar "||" s1 |
 }
-
-PartPOneOneVoiceOne =  \relative c'' { %Cor
-  \transposition f \clef "treble" \key c \major \time 4/4 | % 1
-  c1 \mf ~ | % 2
-  c4.. r16 c8 -. ces -. bes -. a -. | % 3
-  a1 ~ | % 4
-  a4.. r16 a8 -. bes -. ces -. c -. | % 5
-  c1 ~ | % 6
-  c2 c8 -. ces -. bes -. a -. | % 7
-  a1 | % 8
-  g8 a r4 a8 -. bes -. ces -. c -. \bar "||"
-  c1 \> ~ | \barNumberCheck #10
-  c1 \! ~ | % 11
-  c1 | % 12
-  c1 \mp | % 13
-  <a d>1 \mf | % 14
-  <d f>2 <b d> | % 15
-  <a c>1 ~ ~ | % 16
-  <a c>4 <b d> <a c> <a c> | % 17
-  <a d>1 | % 18
-  <a d>2 <b d> | % 19
-  <a e'>1 \bar "||"
-  <c e>1 | % 21
-  e2 f | % 22
-  <d g>1 | % 23
-  a'1 | % 24
-  <d, g>1 | % 25
-  <c e>1 ~ ~ | % 26
-  <c e>2 <a d> | % 27
-  <gis b>1 ~ ~ | % 28
-  <gis b>4 <des as'>2. | % 29
-  <c' a'>1 \mf ~ ~ | \barNumberCheck #30
-  <c a'>2 <c a'>8 -. <b gis'> -. <bes g'> -. <a fis'> -. | % 31
-  <a f'>1 | % 32
-  <g es'>8 <a f'> r4 <as as'>8 -. <g g'> -. <fis fis'> -. <f f'>
-  -. | % 33
-  \key f \major <f d'>1 | % 34
-  r4 a \fff d a | % 35
-  c4. bes8 bes2 ~ | % 36
-  bes4 g c4. g8 | % 37
-  a1 | % 38
-  r4 a d a | % 39
-  c4. bes8 bes2 ~ | \barNumberCheck #40
-  bes4 g c4. g8 | % 41
-  a1 \bar "||"
-  r4 a d f | % 43
-  a4. g8 g2 ~ | % 44
-  g4 g c4. g8 | % 45
-  a1 ~ | % 46
-  a2 r4 a, \f | % 47
-  d1 ~ | % 48
-  d8 c bes a g f e d | % 49
-  cis1 ~ | \barNumberCheck #50
-  cis4 bes bes4. a8 | % 51
-  a1 | % 52
-  r2 <d' f>8 \mf -. <cis e> -. <c es> -. <b es> -. | % 53
-  <bes d>1 | % 54
-  <a cis>1 | % 55
-  \key d \major R1*7 | % 62
-  r4 e' \ff a4. e8 | % 63
-  fis1 \bar "||"
-  r4 fis, \f b d | % 65
-  fis4. e e4 ~ | % 66
-  e4 e a4. e8 | % 67
-  fis1 ~ | % 68
-  fis2 r4 fis | % 69
-  b1 ~ | \barNumberCheck #70
-  b8 a g fis e d cis b | % 71
-  ais1 ~ | % 72
-  ais4 r r2 | % 73
-  R1  \bar "||"
-}
-
-PartPOneOneVoiceTwo =  \relative a' { %Cor
-  \transposition f \clef "treble" \key c \major \time 4/4 | % 1
-  s1*8  \bar "||"
-  s1 s1*2 | % 12
-  s1 | % 13
-  s1*6  s1 \bar "||"
-  s1 | % 21
-  a1 s | % 23
-  c2.. c8 s1*5 | % 29
-  s1*4  | % 33
-  \key f \major s4*5 s4*15  s1*4 \bar "||"
-  s4*19 s4*5 s2*9 s2*5 | % 55
-  \key d \major s1 s4*25 s4*7  \bar "||"
-  s4 s2. \f s1*9  \bar "||"
-}
-
-PartPOneFiveVoiceOne =  \relative d { %Tuba
-  \clef "bass" \key f \major \time 4/4 | % 1
-  d1 \f ~ | % 2
-  d4.. r16 d8 -. des -. c -. b -. | % 3
-  bes1 ~ | % 4
-  bes4.. r16 bes8 -. b -. c -. cis -. | % 5
-  d1 \f ~ | % 6
-  d2 d8 -. des -. c -. b -. | % 7
-  bes1 | % 8
-  as8 bes r4 bes8 -. b -. c -. cis -. \bar "||"
-  d8 \fff -. d -. d -. d -. d -. d -. d -. d -. |
-  \barNumberCheck #10
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 11
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 12
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 13
-  g8 -. g -. g -. g -. g -. g -. g -. g -. | % 14
-  c,8 -. c -. c -. c -. c -. c -. c -. c -. | % 15
-  d8 -. d -. d -. d -. d -. d -. d -. c | % 16
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 17
-  g8 -. g -. g -. g -. g -. g -. g -. g -. | % 18
-  c,8 -. c -. c -. c -. c -. c -. c -. c -. | % 19
-  d8 -. d -. d -. d -. d -. d -. d -. d -. \bar "||"
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 21
-  bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 22
-  c8 -. c -. c -. c -. c -. c -. c -. c -. | % 23
-  d8 -. d -. d -. d -. d -. d -. d -. c | % 24
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 25
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 26
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 27
-  bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 28
-  bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 29
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | \barNumberCheck
-  #30
-  d8 -. d -. d -. d -. d -. des -. c -. b -. | % 31
-  bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 32
-  as8 -. bes -. bes -. bes -. des -. c -. b -. bes -. | % 33
-  \key bes \major g'8 -. g -. g -. g -. g -. g -. d' -. d -. | % 34
-  g,8 \f -. g -. g -. g -. g -. g -. d -. d -. | % 35
-  c8 -. c -. c -. c -. c -. c -. c -. c -. | % 36
-  f8 -. f -. f -. f -. f -. f -. f -. f -. | % 37
-  g8 -. g -. g -. g -. g -. g -. d' -. d -. | % 38
-  g,8 -. g -. g -. g -. g -. g -. d -. d -. | % 39
-  c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-  #40
-  f8 -. f -. f -. f -. f -. f -. f -. f -. | % 41
-  g8 -. g -. g -. g -. g -. g -. d' -. d -. \bar "||"
-  g,8 -. g -. g -. g -. g -. g -. d -. d -. | % 43
-  es8 -. es -. es -. es -. es -. es -. es -. es -. | % 44
-  f8 -. f -. f -. f -. f -. f -. f -. f -. | % 45
-  g8 -. g -. g -. g -. g -. g -. g -. d -. | % 46
-  g8 -. g -. g -. g -. g -. g -. d -. d -. | % 47
-  g8 -. g -. g -. g -. g -. g -. d -. d -. | % 48
-  g8 -. g -. g -. g -. g -. g -. g -. d -. | % 49
-  c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-  #50
-  fis8 -. fis -. fis -. fis -. fis -. fis -. fis -. fis -. | % 51
-  g8 -. g -. g -. g -. g -. g -. g -. g -. | % 52
-  g8 -. g -. g -. g -. g -. fis -. f -. e -. | % 53
-  es8 -. es -. es -. es -. es -. es -. es -. es -. | % 54
-  d8 -. d -. d -. d -. d -. d -. d -. d -. | % 55
-  \key g \major e8 -. e -. r e -. e -. e -. r e -. | % 56
-  e8 -. e -. r e -. e -. e -. r e -. | % 57
-  a8 -. a -. r a -. a -. a -. r a -. | % 58
-  fis8 -. fis -. r fis -. fis -. fis -. r fis -. | % 59
-  b8 -. b -. r b -. b -. b -. r b -. | \barNumberCheck #60
-  b8 -. b -. r b -. b -. b -. r b -. | % 61
-  a8 -. a -. r a -. a -. a -. r a -. | % 62
-  fis8 -. fis -. r fis -. fis -. fis -. r fis -. | % 63
-  b8 -. b -. r b -. b -. b -. r b -. \bar "||"
-  b8 -. b -. r b -. b -. b -. r b -. | % 65
-  c,8 -. c -. r c -. c -. c -. r c -. | % 66
-  d8 -. d -. r d -. d -. d -. r d -. | % 67
-  e8 -. e -. r e -. e -. e -. r d -. | % 68
-  e8 -. e -. r e -. e -. e -. b -. b -. | % 69
-  e8 -. e -. r e -. e -. e -. r e -. | \barNumberCheck #70
-  e8 -. e -. r e -. e -. e -. r e -. | % 71
-  c8 -. c -. r c -. c -. c -. r c -. | % 72
-  c8 -. c -. r c -. c -. c -. r c -. | % 73
-  b'1 \mf \bar "||"
-  }
-
-PartPOneSixVoiceOne =  \relative bes, { %Timbales
-    \clef "bass" \key f \major \time 4/4 R1*8 \bar "||"
-    R1*11 \bar "||"
-    R1*13 | % 33
-    \key bes \major R1*9 \bar "||"
-    R1*13 | % 55
-    \key g \major R1*9 \bar "||"
-    R1*10  \bar "||"
-  }
-
-PartPOneSixVoiceTwo =  \relative d { %Timbales
-    \clef "bass" \key f \major \time 4/4 s1*8 \bar "||"
-    s1 s1*9 s1 \bar "||"
-    s1*9 s1*4 | % 33
-    \key bes \major s1*5 s1*4 \bar "||"
-    s1*6 s1*7 | % 55
-    \key g \major s1 s1*8 \bar "||"
-    s1 s1*9  \bar "||"
-  }
 
 BassD = \drummode {
     \clef "percussion" \time 4/4 R1*6 | %7
@@ -1121,12 +954,8 @@ HighH = \drummode {
 
   }
 
-Cymbales = \drummode {
-    \clef "percussion" \time 4/4
-    s1*73  \bar "||"
-  }
 
-PartPOneEightVoiceOne =  \relative a' { %Piano
+PartPOneEightVoiceOne =  \relative a' { %Piano Main droite
     \clef "treble" \key f \major \time 4/4 | % 1
     <a d>1 \f ~ ~ | % 2
     <a d>4.. r16 <a d>8 -. <as des> -. <g c> -. <fis b> -. | % 3
@@ -1179,11 +1008,11 @@ PartPOneEightVoiceOne =  \relative a' { %Piano
     e1 ~ | \barNumberCheck #70
     e8 d c b a g fis e | % 71
     dis1 ~ | % 72
-    dis4 c c4. b8 | % 73
-    b1  \bar "||"
+    dis4 c c4. b8 \bar "||" % 73
+    b1  | %74
   }
 
-PartPOneEightVoiceFive =  \relative a' { %Piano
+PartPOneEightVoiceFive =  \relative a' { %Piano Main gauche
     \clef "bass" \key f \major \time 4/4 R1*4 \clef "treble" | % 5
     <a d>1 \f ~ ~ | % 6
     <a d>2 <a d>8 -. <as des> -. <g c> -. <fis b> -. | % 7
@@ -1258,8 +1087,8 @@ PartPOneEightVoiceFive =  \relative a' { %Piano
     e8 -. e -. r e -. e -. e -. r e -. | \barNumberCheck #70
     e8 -. e -. r e -. e -. e -. r e -. | % 71
     c8 -. c -. r c -. c -. c -. r c -. | % 72
-    c8 -. c -. r c -. c -. c -. r c -. | % 73
-    b'1  \bar "||"
+    c8 -. c -. r c -. c -. c -. r c -. \bar "||" % 73
+    b'1  | %74
   }
 
 PartPTwoEightVoiceOne =  \relative c''' { %Violon I
@@ -1315,8 +1144,8 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     <g b>1 \mp | \barNumberCheck #70
     <e a>1 | % 71
     <c fis>1 ~ ~ | % 72
-    <c fis>4 <a fis'> <a fis'>2 | % 73
-    <g' b>1  \bar "||" %74
+    <c fis>4 <a fis'> <a fis'>2 \bar "||" % 73
+    <g' b>1  | %74
 
     % Parties ajoutée 2015
     r1 |%75
@@ -1361,7 +1190,7 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     f1 ~ |%108
     f2 ~ f8 e ees d |%109
     des1 |%110
-    r2. des4 |%111
+    r2. des4 \bar "||"%111
     % Plus un ton
     \key g \minor
     g1 |%112
@@ -1371,7 +1200,7 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     g1 ~ |%116
     g2 ~ g8 ges f e |%117
     ees1 |%118
-    r2. ees4 |%119
+    r2. ees4 \bar "||"%119
     \key a \minor
     a1 |%120
     r2 a8 aes g fis |%121
@@ -1385,7 +1214,6 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     r2 a8 aes g fis |%129
     f1 |%130
     e2. ~ e8 e8 \bar "|."
-
 
   }
 
@@ -1403,7 +1231,7 @@ PartPTwoEightVoiceTwo =  \relative d' { %Violon I
     \key g \major s1 s1*8 \bar "||"
     s1 s | % 66
     d2 b s1*2 | % 69
-    s1*5 \mp  \bar "||"
+    s1*4 \mp  \bar "||" s1 |%74
   }
 
 PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
@@ -1481,8 +1309,8 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     <g b>1 | \barNumberCheck #70
     <e a>1 | % 71
     <c fis>1 ~ ~ | % 72
-    <c fis>4 <a fis'> <a fis'>2 | % 73
-    <g' b>1 \bar "||"
+    <c fis>4 <a fis'> <a fis'>2 \bar "||" % 73
+    <g' b>1 | %74
     % Ajout 2015
     r1 * 7 \bar "||"%81
 
@@ -1515,7 +1343,7 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     e1 ~ |%108
     e2 e8 ees d des |
     c1 |%110
-    r2. c4 |%111
+    r2. c4 \bar "||"%111
     % Plus un ton
     \key g \minor
 
@@ -1527,7 +1355,7 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     d1 ~ |%116
     d2 d8 des c b |
     bes1 ~ |%118
-    bes2. bes4 |%119
+    bes2. bes4 \bar "||"%119
     % Plus un ton
     \key a \minor
     e1 ~ |%120
@@ -1542,9 +1370,6 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     e2 e8 ees d des |
     c1 |%130
     b2. ~ b8 b8 \bar "|."
-
-
-
 
   }
 
@@ -1572,7 +1397,7 @@ PartPTwoNineVoiceTwo =  \relative d' { %Alto/ Violon II
     g4 g fis g s1 | % 62
     e2 d s1 \bar "||"
     s2 s \mp s1 | % 66
-    d2 b s1*7 \bar "||"
+    d2 b s1*6 \bar "||" s1 |
   }
 
 PartPThreeZeroVoiceOne =  \relative a { %Violoncelle
@@ -1628,8 +1453,73 @@ PartPThreeZeroVoiceOne =  \relative a { %Violoncelle
     b1 | \barNumberCheck #70
     a1 | % 71
     fis1 ~ | % 72
-    fis4 fis fis2 | % 73
-    b1 \bar "||"
+    fis4 fis fis2 \bar "||" % 73
+    b2. fis'4 |%74
+    fis4. e8 e2 |%75
+    e2 b'2~|%76
+    b1 |%77
+    b,2. fis'4 |%78
+    fis4. e8 e2 |%79
+    e2 b2~|%80
+    b1 |%81
+
+    %Pont
+    \key f \minor
+    f4 r4 r4 r8 ees8 |%82
+    f4 r4 aes2 |%83
+    aes2 aes2 |%84
+    g2 g2 |%85
+    aes1 |%86
+    r2 aes2|%87
+    aes2 aes2 |%88
+    g2 bes2 |%89
+    aes1 |%90
+
+    r4 c,4 f aes |%91
+    c4. bes8 bes2 |%92
+    bes4 bes4 ees4. bes8 |%93
+    c1 |%94
+    c2 r4 c4 |%95
+
+    r1 |%96
+    r1 |%97
+    r1 |%98
+    r1 |%99
+    r1 |%100
+    r1 |%101
+    r1 |%102
+    r1 |%103
+    r1 |%104
+    r1 |%105
+    r1 |%106
+    r1 |%107
+    r1 |%108
+    r1 |%109
+    r1 |%110
+    r1 \bar "||"%111
+    \key g \minor
+    r1 |%112
+    r1 |%113
+    r1 |%114
+    r1 |%115
+    r1 |%116
+    r1 |%117
+    r1 |%118
+    r1 \bar "||"%119
+    \key a \minor
+    r1 |%120
+    r1 |%121
+    r1 |%122
+    r1 |%123
+    r1 |%124
+    r1 |%125
+    r1 |%126
+    r1 |%127
+    r1 |%128
+    r1 |%129
+    r1 |%130
+    r1 \bar "|."
+
   }
 
 PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
@@ -1705,8 +1595,8 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
     e8 -. e -. r e -. e -. e -. r e -. | \barNumberCheck #70
     e8 -. e -. r e -. e -. e -. r e -. | % 71
     c8 -. c -. r c -. c -. c -. r c -. | % 72
-    c8 -. c -. r c -. c -. c -. r c -. | % 73
-    b'8 b8 b8 b8 b8 b8 b8 b8  \bar "||"%74
+    c8 -. c -. r c -. c -. c -. r c -. \bar "||" % 73
+    b'8 b8 b8 b8 b8 b8 b8 b8  |%74
     b8 b8 b8 b8 b8 bes8 a8 aes8 |%75
     g8 g8 g8 g8 g8 g8 g8 g8 |%76
     g8 g8 g8 g8 g8 gis8 a bes |%77
@@ -1749,7 +1639,7 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
     f8 f f f f f f f |%108
     f8 f f f f fes ees d |%109
     des8 des des des des des des des |%110
-    des8 des des des des des des4 |%111
+    des8 des des des des des des4 \bar "||"%111
     % Nouveau changement de tonalité ici : plus un ton
     \key g \minor
     g8 g g g g g g g |%112
@@ -1760,7 +1650,7 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
     g8 g g g g g g g |%116
     g8 g g g g ges f e |%117
     ees8 ees ees ees ees ees ees ees |%118
-    ees8 ees ees ees ees ees ees4 |%119
+    ees8 ees ees ees ees ees ees4 \bar "||"%119
     % Mais ici : plus un ton
     \key a \minor
     a8 a a a a a a a |%120
@@ -1779,557 +1669,7 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
 
   }
 
-PartPSevenVoiceOne =  \relative b' { %Sax bar
-    \transposition es, \clef "treble" \key d \major \time 4/4 R1*4 | % 5
-    b1 \mf ~ | % 6
-    b2 b8 -. bes -. a -. gis -. | % 7
-    g1 | % 8
-    f8 g r4 g8 -. gis -. a -. ais -. \bar "||"
-    b1 \> ~ | \barNumberCheck #10
-    b1 \! ~ | % 11
-    b1 | % 12
-    b1 \mp | % 13
-    R1*7 \bar "||"
-    d'1 \mf | % 21
-    b1 | % 22
-    e1 s | % 24
-    e1 | % 25
-    d1 ~ | % 26
-    d2 b | % 27
-    ais1 ~ | % 28
-    ais4 es2. | % 29
-    b'1 \mf ~ | \barNumberCheck #30
-    b2 b8 -. ais -. a -. gis -. | % 31
-    g1 | % 32
-    f8 g r4 bes8 -. a -. gis -. g -. | % 33
-    \key g \major e1 | % 34
-    g,1 \mf s | % 36
-    d'1 | % 37
-    b1 ~ | % 38
-    b4 b a b | % 39
-    a2 b ~ | \barNumberCheck #40
-    b2 c | % 41
-    e1 ~ \bar "||"
-    e2 g | % 43
-    c,1 s | % 45
-    e1 | % 46
-    e1 | % 47
-    e1 | % 48
-    c1 | % 49
-    c1 ~ | \barNumberCheck #50
-    c2 c \mf | % 51
-    e1 ~ | % 52
-    e2 e8 -. dis -. d -. cis -. | % 53
-    c1 | % 54
-    b1 | % 55
-    \key e \major R1*9 \bar "||"
-    r2 cis \mf | % 65
-    a1 s | % 67
-    cis1 ~ | % 68
-    cis1 | % 69
-    e1 | \barNumberCheck #70
-    cis1 | % 71
-    a1 ~ | % 72
-    a4 fis fis2 | % 73
-    e1 \mf  \bar "||"
-  }
-
-PartPSevenVoiceTwo =  \relative b'' { %Sax bar
-    \transposition es, \clef "treble" \key d \major \time 4/4 s1*4 | % 5
-    s1*4 \mf \bar "||"
-    s1 \> s1*2 \! | % 12
-    s1*7 \mp s1 \bar "||"
-    s1 \mf | % 21
-    b1 s | % 23
-    d2.. d8 s1*5 | % 29
-    s1*4 \mf | % 33
-    \key g \major s1 | % 34
-    s1 \mf | % 35
-    a,2 c s1*2 s1*4 \bar "||"
-    s1*2 | % 44
-    e2 c s1*3 s2*5 s2*9 \mf | % 55
-    \key e \major s1 s1*8 \bar "||"
-    s2 s \mf s1 | % 66
-    b2 gis s1*6 | % 73
-    s1 \mf  \bar "||"
-  }
-
-PartPEightVoiceOne =  \relative d { %Basson
-    \clef "bass" \key f \major \time 4/4 R1*4 | % 5
-    d1 \mf ~ | % 6
-    d2 d8 -. des -. c -. b -. | % 7
-    bes1 | % 8
-    as8 bes r4 bes8 -. b -. c -. cis -. \bar "||"
-    d,8 \fff -. d -. d -. d -. d -. d -. d -. d -. |
-    \barNumberCheck #10
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 11
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 12
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 13
-    g8 -. g -. g -. g -. g -. g -. g -. g -. | % 14
-    c,8 -. c -. c -. c -. c -. c -. c -. c -. | % 15
-    d8 -. d -. d -. d -. d -. d -. d -. c | % 16
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 17
-    g8 -. g -. g -. g -. g -. g -. g -. g -. | % 18
-    c,8 -. c -. c -. c -. c -. c -. c -. c -. | % 19
-    d8 -. d -. d -. d -. d -. d -. d -. d -. \bar "||"
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 21
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 22
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 23
-    d8 -. d -. d -. d -. d -. d -. d -. c | % 24
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 25
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 26
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 27
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 28
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 29
-    d''1 ~ | \barNumberCheck #30
-    d2 d8 -. cis -. c -. b -. | % 31
-    bes1 | % 32
-    as8 bes r4 des8 -. c -. b -. bes -. | % 33
-    \key bes \major g1 | % 34
-    g,8 \f -. g -. g -. g -. g -. g -. d -. d -. | % 35
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 36
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 37
-    g8 -. g -. g -. g -. g -. g -. d' -. d -. | % 38
-    g,8 -. g -. g -. g -. g -. g -. d -. d -. | % 39
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #40
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 41
-    g8 -. g -. g -. g -. g -. g -. d' -. d -. \bar "||"
-    g,8 -. g -. g -. g -. g -. g -. d -. d -. | % 43
-    es8 -. es -. es -. es -. es -. es -. es -. es -. | % 44
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 45
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 46
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 47
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 48
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 49
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #50
-    fis8 -. fis -. fis -. fis -. fis -. fis -. fis -. fis -. | % 51
-    g'1 \f ~ | % 52
-    g2 g8 -. fis -. f -. e -. | % 53
-    es1 | % 54
-    d1 | % 55
-    \key g \major R1*9 \bar "||"
-    r2 e \mf | % 65
-    c1 s | % 67
-    e1 ~ | % 68
-    e1 | % 69
-    g1 | \barNumberCheck #70
-    e1 | % 71
-    c1 ~ | % 72
-    c4 a a2 | % 73
-    g1 \mf  \bar "||"
-  }
-
-PartPEightVoiceTwo =  \relative d { %Basson
-    \clef "bass" \key f \major \time 4/4 s1*4 | % 5
-    s1*4 \mf \bar "||"
-    s1 \fff s1*9 s1 \bar "||"
-    s1*9 s1*4 | % 33
-    \key bes \major s1 | % 34
-    s1*4 \f s \bar "||"
-    s1*6 s1*3 | % 51
-    s1*4 \f | % 55
-    \key g \major s1 s1*8 \bar "||"
-    s2 s \mf s1 | % 66
-    d2 b s1*6 | % 73
-    s1 \mf  \bar "||"
-  }
-
-PartPNineVoiceOne =  \relative e' { %Clar. basse
-    \transposition bes, \clef "treble" \key g \major \time 4/4 R1*4 | % 5
-    e1 \mf ~ | % 6
-    e2 e8 -. es -. d -. cis -. | % 7
-    c1 | % 8
-    bes8 c r4 c8 -. cis -. d -. dis -. \bar "||"
-    e1 \> \mf ~ | \barNumberCheck #10
-    e1 \! | % 11
-    R1*9 \bar "||"
-    e8 \mf -. e -. e -. e -. e -. e -. e -. e -. | % 21
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 22
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 23
-    e8 -. e -. e -. e -. e -. e -. e -. d | % 24
-    e8 -. e -. e -. e -. e -. e -. e -. e -. | % 25
-    e8 -. e -. e -. e -. e -. e -. e -. e -. | % 26
-    e8 -. e -. e -. e -. e -. e -. e -. e -. | % 27
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 28
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 29
-    g'1 \mf ~ | \barNumberCheck #30
-    g2 g8 -. fis -. f -. e -. | % 31
-    e1 | % 32
-    d8 e r4 es8 -. d -. cis -. c -. | % 33
-    \key c \major c1 | % 34
-    R1*8 \bar "||"
-    a'8 -. a -. a -. a -. a -. a -. e -. e -. | % 43
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 44
-    g8 -. g -. g -. g -. g -. g -. g -. g -. | % 45
-    a8 -. a -. a -. a -. a -. a -. a -. e -. | % 46
-    a8 -. a -. a -. a -. a -. a -. e -. e -. | % 47
-    a8 -. a -. a -. a -. a -. a -. e -. e -. | % 48
-    a8 -. a -. a -. a -. a -. a -. a -. e -. | % 49
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | \barNumberCheck
-    #50
-    gis8 -. gis -. gis -. gis -. gis -. gis -. gis -. gis -. | % 51
-    a1 \mf ~ | % 52
-    a2 a8 -. gis -. g -. fis -. | % 53
-    f1 | % 54
-    e1 | % 55
-    \key a \major R1*9 \bar "||"
-    r2 fis \mf | % 65
-    d1 s | % 67
-    fis1 ~ | % 68
-    fis1 | % 69
-    a1 | \barNumberCheck #70
-    fis1 | % 71
-    d1 ~ | % 72
-    d4 b b2 | % 73
-    a1 \mf  \bar "||"
-  }
-
-PartPNineVoiceTwo =  \relative e' { %Clar basse
-    \transposition bes, \clef "treble" \key g \major \time 4/4 s1*4 | % 5
-    s1*4 \mf \bar "||"
-    s1 \> \mf s1*9 \! s1 \bar "||"
-    s1*9 \mf | % 29
-    s1*4 \mf | % 33
-    \key c \major s1*5 s1*4 \bar "||"
-    s1*6 s1*3 | % 51
-    s1*4 \mf | % 55
-    \key a \major s1 s1*8 \bar "||"
-    s2 s \mf s1 | % 66
-    e2 cis s1*6 | % 73
-    s1 \mf  \bar "||"
-  }
-
-PartPOneTwoVoiceOne =  \relative a { %Euphonium
-    \clef "bass" \key f \major \time 4/4 R1*4 | % 5
-    a1 \mf ~ | % 6
-    a2 a8 -. as -. g -. fis -. | % 7
-    f1 | % 8
-    es8 f r4 f8 -. ges -. <g c> -. as -. \bar "||"
-    a1 \> ~ | \barNumberCheck #10
-    a1 \! | % 11
-    R1*2 | % 13
-    d1 \mf | % 14
-    g2 e | % 15
-    d1 ~ | % 16
-    d4 e f d | % 17
-    d1 | % 18
-    d2 g | % 19
-    d1 \bar "||"
-    f1 | % 21
-    d1 | % 22
-    g1 s | % 24
-    g1 | % 25
-    f1 ~ | % 26
-    f2 d | % 27
-    cis1 ~ | % 28
-    cis4 ges2. | % 29
-    d'1 \mf ~ | \barNumberCheck #30
-    d2 d8 -. cis -. c -. b -. | % 31
-    bes1 | % 32
-    as8 bes r4 des8 -. c -. b -. bes -. | % 33
-    \key bes \major g1 | % 34
-    R1*8 \bar "||"
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 43
-    es8 -. es -. es -. es -. es -. es -. es -. es -. | % 44
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 45
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 46
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 47
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 48
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 49
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #50
-    fis8 -. fis -. fis -. fis -. fis -. fis -. fis -. fis -. | % 51
-    bes1 ~ | % 52
-    bes2 bes8 -. a -. as -. as -. | % 53
-    g1 | % 54
-    fis1 | % 55
-    \key g \major R1*9 \bar "||"
-    r2 g \mf | % 65
-    e1 | % 66
-    fis1 | % 67
-    g1 ~ | % 68
-    g1 | % 69
-    b1 | \barNumberCheck #70
-    a1 | % 71
-    fis1 ~ | % 72
-    fis4 fis fis2 | % 73
-    b,1 \mf  \bar "||"
-  }
-
-PartPOneTwoVoiceTwo =  \relative f' { %Euphonium
-    \clef "bass" \key f \major \time 4/4 s1*4 | % 5
-    s1*4 \mf \bar "||"
-    s1 \> s1*3 \! | % 13
-    s1*6 \mf s1 \bar "||"
-    s1*3 | % 23
-    f2.. f8 s1*5 | % 29
-    s1*4 \mf | % 33
-    \key bes \major s1*5 s1*4 \bar "||"
-    s1*6 s1*7 | % 55
-    \key g \major s1 s1*8 \bar "||"
-    s2 s \mf s1*8 | % 73
-    s1 \mf  \bar "||"
-  }
-
-PartPOneThreeVoiceOne =  \relative d { %Trombone
-    \clef "bass" \key f \major \time 4/4 R1*4 | % 5
-    d1 \mf ~ | % 6
-    d2 d8 -. des -. c -. b -. | % 7
-    bes1 | % 8
-    as8 bes r4 bes8 -. b -. c -. cis -. \bar "||"
-    d1 \> ~ | \barNumberCheck #10
-    d1 \! | % 11
-    R1*9 \bar "||"
-    d8 \mf -. d -. d -. d -. d -. d -. d -. d -. | % 21
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 22
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 23
-    d8 -. d -. d -. d -. d -. d -. d -. c | % 24
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 25
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 26
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 27
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 28
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 29
-    f'1 \mf ~ | \barNumberCheck #30
-    f2 f8 -. e -. es -. d -. | % 31
-    d1 | % 32
-    c8 d r4 des8 -. c -. b -. bes -. | % 33
-    \key bes \major bes1 | % 34
-    R1*8 \bar "||"
-    g'8 -. g -. g -. g -. g -. g -. d -. d -. | % 43
-    es8 -. es -. es -. es -. es -. es -. es -. es -. | % 44
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 45
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 46
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 47
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 48
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 49
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #50
-    fis8 -. fis -. fis -. fis -. fis -. fis -. fis -. fis -. | % 51
-    bes1 ~ | % 52
-    bes2 bes8 -. a -. as -. as -. | % 53
-    g1 | % 54
-    fis1 | % 55
-    \key g \major R1*9 \bar "||"
-    r2 g \mf | % 65
-    e1 | % 66
-    fis1 | % 67
-    g1 ~ | % 68
-    g1 | % 69
-    b1 | \barNumberCheck #70
-    a1 | % 71
-    fis1 ~ | % 72
-    fis4 fis fis2 | % 73
-    b,1 \mf  \bar "||"
-  }
-
-PartPOneFourVoiceOne =  \relative d { %Trombone basse
-    \clef "bass" \key f \major \time 4/4 R1*4 | % 5
-    d1 \mf ~ | % 6
-    d2 d8 -. des -. c -. b -. | % 7
-    bes1 | % 8
-    as8 bes r4 bes8 -. b -. c -. cis -. \bar "||"
-    d1 \> ~ | \barNumberCheck #10
-    d1 \! ~ | % 11
-    d1 | % 12
-    d1 \mp | % 13
-    R1*7 \bar "||"
-    d8 \mf -. d -. d -. d -. d -. d -. d -. d -. | % 21
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 22
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 23
-    d8 -. d -. d -. d -. d -. d -. d -. c | % 24
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 25
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 26
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 27
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 28
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 29
-    f'1 \mf ~ | \barNumberCheck #30
-    f2 f8 -. e -. es -. d -. | % 31
-    d1 | % 32
-    c8 d r4 des8 -. c -. b -. bes -. | % 33
-    \key bes \major bes1 | % 34
-    R1*8 \bar "||"
-    g'8 -. g -. g -. g -. g -. g -. d -. d -. | % 43
-    es8 -. es -. es -. es -. es -. es -. es -. es -. | % 44
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 45
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 46
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 47
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 48
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 49
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #50
-    fis8 -. fis -. fis -. fis -. fis -. fis -. fis -. fis -. | % 51
-    g1 ~ | % 52
-    g2 g8 -. fis -. f -. e -. | % 53
-    es1 | % 54
-    d1 | % 55
-    \key g \major R1*9 \bar "||"
-    r2 e \mf | % 65
-    c1 s | % 67
-    e1 ~ | % 68
-    e1 | % 69
-    g1 | \barNumberCheck #70
-    e1 | % 71
-    c1 ~ | % 72
-    c4 a a2 | % 73
-    g1 \mf  \bar "||"
-  }
-
-PartPOneFourVoiceTwo =  \relative d { %Trombone basse
-    \clef "bass" \key f \major \time 4/4 s1*4 | % 5
-    s1*4 \mf \bar "||"
-    s1 \> s1*2 \! | % 12
-    s1*7 \mp s1 \bar "||"
-    s1*9 \mf | % 29
-    s1*4 \mf | % 33
-    \key bes \major s1*5 s1*4 \bar "||"
-    s1*6 s1*7 | % 55
-    \key g \major s1 s1*8 \bar "||"
-    s2 s \mf s1 | % 66
-    d2 b s1*6 | % 73
-    s1 \mf \bar "||"
-  }
-
-PartPOneSevenVoiceOne =  \relative a' { %Vibraphone
-    \clef "treble" \key f \major \time 4/4 | % 1
-    <a d>1 \f ~ ~ | % 2
-    <a d>4.. r16 <a d>8 -. <as des> -. <g c> -. <fis b> -. | % 3
-    <f bes>1 ~ ~ | % 4
-    <f bes>4.. r16 <f bes>8 -. <ges b> -. <g c> -. <as cis> -. | % 5
-    <a d>1 ~ ~ | % 6
-    <a d>2 <a d>8 -. <as des> -. <g c> -. <fis b> -. | % 7
-    <f bes>1 | % 8
-    <es as>8 <f bes> r4 <f bes>8 -. <ges b> -. <g c> -. <as cis> -.
-    \bar "||"
-    d,8 \mf -. d -. d -. d -. d -. d -. d -. d -. |
-    \barNumberCheck #10
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 11
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 12
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 13
-    g8 -. g -. g -. g -. g -. g -. g -. g -. | % 14
-    c,8 -. c -. c -. c -. c -. c -. c -. c -. | % 15
-    d8 -. d -. d -. d -. d -. d -. d -. c | % 16
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 17
-    g8 -. g -. g -. g -. g -. g -. g -. g -. | % 18
-    c,8 -. c -. c -. c -. c -. c -. c -. c -. | % 19
-    d8 -. d -. d -. d -. d -. d -. d -. d -. \bar "||"
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 21
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 22
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 23
-    d8 -. d -. d -. d -. d -. d -. d -. c | % 24
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 25
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 26
-    d8 -. d -. d -. d -. d -. d -. d -. d -. | % 27
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 28
-    bes8 -. bes -. bes -. bes -. bes -. bes -. bes -. bes -. | % 29
-    <f' d'>1 \f ~ ~ | \barNumberCheck #30
-    <f d'>2 <f d'>8 -. <e cis'> -. <es c'> -. <d b'> -. | % 31
-    <d bes'>1 | % 32
-    <c as'>8 <d bes'> r4 <des des'>8 -. <c c'> -. <b b'> -. <bes
-    bes'>8 -. | % 33
-    \key bes \major g8 -. g -. g -. g -. g -. g -. d' -. d -. | % 34
-    g8 \mf -. g -. g -. g -. g -. g -. d -. d -. | % 35
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | % 36
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 37
-    g8 -. g -. g -. g -. g -. g -. d' -. d -. | % 38
-    g,8 -. g -. g -. g -. g -. g -. d -. d -. | % 39
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #40
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 41
-    g8 -. g -. g -. g -. g -. g -. d' -. d -. \bar "||"
-    g,8 -. g -. g -. g -. g -. g -. d -. d -. | % 43
-    es8 -. es -. es -. es -. es -. es -. es -. es -. | % 44
-    f8 -. f -. f -. f -. f -. f -. f -. f -. | % 45
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 46
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 47
-    g8 -. g -. g -. g -. g -. g -. d -. d -. | % 48
-    g8 -. g -. g -. g -. g -. g -. g -. d -. | % 49
-    c8 -. c -. c -. c -. c -. c -. c -. c -. | \barNumberCheck
-    #50
-    fis8 -. fis -. fis -. fis -. fis -. fis -. fis -. fis -. | % 51
-    <g bes>1 \f ~ ~ | % 52
-    <g bes>2 <g bes>8 -. <fis a> -. <f as> -. <e as> -. | % 53
-    <es g>1 | % 54
-    <d fis>1 | % 55
-    \key g \major | % 55
-    e8 \mf -. e -. r e -. e -. e -. r e -. | % 56
-    e8 -. e -. r e -. e -. e -. r e -. | % 57
-    a8 -. a -. r a -. a -. a -. r a -. | % 58
-    fis8 -. fis -. r fis -. fis -. fis -. r fis -. | % 59
-    b8 -. b -. r b -. b -. b -. r b -. | \barNumberCheck #60
-    b8 -. b -. r b -. b -. b -. r b -. | % 61
-    a8 -. a -. r a -. a -. a -. r a -. | % 62
-    fis8 -. fis -. r fis -. fis -. fis -. r fis -. | % 63
-    b8 -. b -. r b -. b -. b -. r b -. \bar "||"
-    b8 -. b -. r b -. b -. b -. r b -. | % 65
-    c,8 -. c -. r c -. c -. c -. r c -. | % 66
-    d8 -. d -. r d -. d -. d -. r d -. | % 67
-    e8 -. e -. r e -. e -. e -. r d -. | % 68
-    e8 -. e -. r e -. e -. e -. b -. b -. | % 69
-    e8 -. e -. r e -. e -. e -. r e -. | \barNumberCheck #70
-    e8 -. e -. r e -. e -. e -. r e -. | % 71
-    c8 -. c -. r c -. c -. c -. r c -. | % 72
-    c8 -. c -. r c -. c -. c -. r c -. | % 73
-    R1  \bar "||"
-  }
-
-PartPOneNineVoiceOne =  \relative f''' { %Glockenspiel
-    \clef "treble^15" \key f \major \time 4/4 R1*8 \bar "||"
-    R1*11 \bar "||"
-    R1*13 | % 33
-    \key bes \major R1*9 \bar "||"
-    R1*13 | % 55
-    \key g \major R1*9 \bar "||"
-    R1*10 \bar "||"
-  }
-
-PartPTwoZeroVoiceOne =  \relative a' { %Tubular bells
-    \clef "treble" \key f \major \time 4/4 R1*8 \bar "||"
-    <a d>1 \ff | \barNumberCheck #10
-    R1*10 \bar "||"
-    R1*13 | % 33
-    \key bes \major R1*9 \bar "||"
-    R1*13 | % 55
-    \key g \major R1*9 \bar "||"
-    R1*10  \bar "||"
-  }
-
-PartPTwoSixVoiceOne =  \relative b' {
-    \clef "percussion" \stopStaff \override Staff.StaffSymbol
-    #'line-count = #1 \startStaff \key c \major \time 4/4 R1*8 \bar "||"
-    b1 \fff | \barNumberCheck #10
-    R1*10 \bar "||"
-    R1*13 | % 33
-    b1 \ff | % 34
-    R1*8 \bar "||"
-    R1*22 \bar "||"
-    R1*10  \bar "||"
-  }
-
-PartPTwoSevenVoiceOne =  \relative b' {
-    \clef "percussion" \stopStaff \override Staff.StaffSymbol
-    #'line-count = #1 \startStaff \key c \major \time 4/4 R1*8 \bar "||"
-    b1 \fff | \barNumberCheck #10
-    R1*10 \bar "||"
-    R1*12 | % 32
-    b8 \fff b r4 b8 b b b | % 33
-    R1*9 \bar "||"
-    R1*22 \bar "||"
-    R1*10  \bar "||"
-  }
-
-
 % The part definition
-piccoloPart = \new Staff <<
-  \set Staff.instrumentName = "Piccolo"
-  \set Staff.shortInstrumentName = "Picc."
-  \context Staff <<
-    \context Voice = "PartPOneVoiceOne" {\PartPOneVoiceOne }
-    \context Voice = "PartTrack" {\PartTrack}
-   % \context Voice = "PartPOneVoiceTwo" { \voiceTwo \PartPOneVoiceTwo }
-  >>
->>
 
 flutePart = \new Staff <<
   \set Staff.instrumentName = "Flute"
@@ -2349,14 +1689,6 @@ clarinetPart = \new Staff <<
   >>
 >>
 
-oboePart = \new Staff <<
-    \set Staff.instrumentName = "Oboe"
-    \set Staff.shortInstrumentName = "Ob."
-    \context Staff <<
-      \context Voice = "PartPFourVoiceOne" { \voiceOne \PartPFourVoiceOne }
-      \context Voice = "PartPFourVoiceTwo" { \voiceTwo \PartPFourVoiceTwo }
-  >>
->>
 
 altosaxPart = \new Staff <<
   \set Staff.instrumentName = "Alto Saxophone"
@@ -2376,32 +1708,6 @@ tenorsaxPart = \new Staff <<
   >>
 >>
 
-baritonesaxPart = \new Staff <<
-  \set Staff.instrumentName = "Baritone Saxophone"
-  \set Staff.shortInstrumentName = "Bar. Sax."
-  \context Staff <<
-    \context Voice = "PartPSevenVoiceOne" { \voiceOne \PartPSevenVoiceOne }
-    \context Voice = "PartPSevenVoiceTwo" { \voiceTwo \PartPSevenVoiceTwo }
-  >>
->>
-
-bassoonPart = \new Staff <<
-  \set Staff.instrumentName = "Bassoon"
-  \set Staff.shortInstrumentName = "Bsn."
-  \context Staff <<
-    \context Voice = "PartPEightVoiceOne" { \voiceOne \PartPEightVoiceOne }
-    \context Voice = "PartPEightVoiceTwo" { \voiceTwo \PartPEightVoiceTwo }
-  >>
->>
-
-bassclarinetPart = \new Staff <<
-  \set Staff.instrumentName = "Bass Clarinet"
-  \set Staff.shortInstrumentName = "B. Cl."
-  \context Staff <<
-    \context Voice = "PartPNineVoiceOne" { \PartPNineVoiceOne }
-  >>
->>
-
 trumpetPart = \new Staff <<
   \set Staff.instrumentName = "Trumpet"
   \set Staff.shortInstrumentName = "Tpt."
@@ -2411,58 +1717,6 @@ trumpetPart = \new Staff <<
   >>
 >>
 
-hornPart = \new Staff <<
-  \set Staff.instrumentName = "Horn"
-  \set Staff.shortInstrumentName = "Hn."
-  \context Staff <<
-    \context Voice = "PartPOneOneVoiceOne" { \voiceOne \PartPOneOneVoiceOne }
-    \context Voice = "PartPOneOneVoiceTwo" { \voiceTwo \PartPOneOneVoiceTwo }
-  >>
->>
-
-euphoniumPart = \new Staff <<
-      \set Staff.instrumentName = "Euphonium"
-      \set Staff.shortInstrumentName = "Eu."
-      \context Staff <<
-        \context Voice = "PartPOneTwoVoiceOne" { \voiceOne \PartPOneTwoVoiceOne }
-        \context Voice = "PartPOneTwoVoiceTwo" { \voiceTwo \PartPOneTwoVoiceTwo }
-  >>
->>
-
-trombonePart = \new Staff <<
-      \set Staff.instrumentName = "Trombone"
-      \set Staff.shortInstrumentName = "Trb."
-      \context Staff <<
-        \context Voice = "PartPOneThreeVoiceOne" { \PartPOneThreeVoiceOne }
-  >>
->>
-
-basstrombonePart = \new Staff <<
-     \set Staff.instrumentName = "Bass Trombone"
-     \set Staff.shortInstrumentName = "B. Trb."
-     \context Staff <<
-       \context Voice = "PartPOneFourVoiceOne" { \voiceOne \PartPOneFourVoiceOne }
-       \context Voice = "PartPOneFourVoiceTwo" { \voiceTwo \PartPOneFourVoiceTwo }
-  >>
->>
-
-tubaPart = \new Staff <<
-  \set Staff.instrumentName = "Tuba"
-  \set Staff.shortInstrumentName = "Tu."
-  \context Staff <<
-    \context Voice = "PartPOneFiveVoiceOne" { \PartPOneFiveVoiceOne }
-  >>
->>
-
-timpaniPart = \new StaffGroup <<
-  \new Staff <<
-    \set Staff.instrumentName = "Timpani"
-    \set Staff.shortInstrumentName = "Timp."
-    \context Staff <<
-      \context Voice = "PartPOneSixVoiceOne" { \PartPOneSixVoiceOne }
-    >>
-  >>
->>
 pianoPart = \new PianoStaff <<
     \set PianoStaff.instrumentName = "Piano"
     \set PianoStaff.shortInstrumentName = "Pno."
@@ -2479,8 +1733,7 @@ drumspart = \new DrumStaff <<
     \context DrumStaff <<
       \new DrumVoice = "BassD" { \voiceOne \BassD }
       \new DrumVoice = "HighH" { \voiceTwo \HighH }
-      \new DrumVoice = "Cymbales" { \voiceThree \Cymbales }
-       \new DrumVoice = "TomD" { \voiceFour \TomD }
+       \new DrumVoice = "TomD" { \voiceThree \TomD }
   >>
 >>
 
@@ -2528,14 +1781,10 @@ bassPart = \new Staff <<
       \flutePart
       \clarinetPart
       \altosaxPart
-      \tenorsaxPart
+      %\tenorsaxPart
+      \trumpetPart
     >>
-    \new StaffGroup <<
-    \trumpetPart
-    %  \hornPart
-    %  \trombonePart
-    %  \tubaPart
-    >>
+
     %\pianoPart
     %\drumspart
     \new StaffGroup <<

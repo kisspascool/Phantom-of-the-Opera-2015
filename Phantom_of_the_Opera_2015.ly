@@ -1,6 +1,8 @@
 
 \version "2.18.2"
 % automatically converted by musicxml2ly from /Users/vivien/Music/Orchestre/Phantom of the Opera/Music_From_The_Phantom_of_the_Opera.mxl
+% TODO
+% Fin
 
 \header {
   encodingsoftware = "MuseScore 1.3"
@@ -8,15 +10,14 @@
   encodingdate = "2014-05-21"
   tagline=""
   title="The Phantom of the Opera"
-  subtitle="version 2015.1"
+  subtitle="version 2015.2"
   composer="Andrew Lloyd Weber"
 }
 
 \paper {
-#(set-paper-size "a3")
-  %ragged-right=##t
-indent = 25\mm
-short-indent = 15\mm
+  #(set-paper-size "a3")
+  indent = 25\mm
+  short-indent = 15\mm
 }
 
 \layout {
@@ -59,7 +60,7 @@ PartTrack =  \relative c { %Track temps, indication tempi, reperes
     s1*7 \mark \default \bar "||" %81
     s1*30 \mark \default \bar "||" %111
     s1*8 \mark \default \bar "||"%119
-    s1*12 \bar "|."
+    s1*11 \bar "|."
   }
 
 PartPTwoVoiceOne =  \relative c''' { %Flute
@@ -192,8 +193,7 @@ PartPTwoVoiceOne =  \relative c''' { %Flute
   r2 f8 fis g gis |%127
   a1 |%128
   r2 a8 aes g fis |%129
-  f1 |%130
-  e2. ~ e8 e8 \bar "|."
+  e'1  \bar "|."
 
 }
 
@@ -276,59 +276,54 @@ PartPThreeVoiceOne =  \relative d''' { %Clarinet
   g,4 c8 g8 bes8 c8 g8 f8 |%82
   g4 r2. |%83
 
-  r1 | %84
-  r1 | %85
-  r1 | %86
-  r1 | %87
-  r1 | %88
-  r1 | %89
-  r1 | %90
-  r1 | %91
-  r1 |%92
-  r1 |%93
-  r1 |%94
-  r1 |%95
-  r1 |%96
-  r1 |%97
-  r1 |%98
-  r1 |%99
-  r1 |%100
-  r1 |%101
-  r1 |%102
-  r1 |%103
-  r1 |%104
-  r1 |%105
-  r1 |%106
-  r1 |%107
-  r1 |%108
-  r1 |%109
-  r1 |%110
-  r1 \bar "||"%111
+  R1*7 | %90
+
+  r8 a bes d, ees d ees g | %91
+  r8 g a d, ees f a d |%92
+  r8 a bes d, ees g ees d |%93
+  r8 a' bes ees g a g d |%94
+  r8 a bes f bes a g bes |%95
+  r8 g a d, ees ees g a |%96
+  r8 g a d, ees ees d bes |%97
+  r8 f' a d, ees d f g |%98
+  r8 g a d, ees g f d |%99
+
+  \transpose bes c''' {c1 |%100
+  % Fin couplet
+  r2 f8 e ees d |%101
+  des1 |%102
+  r2 des8 d ees e |%103
+  f1 |%104
+  r2 f8 e ees d |%105
+  des1 ~ |%106
+  des2 des8 d ees e |%107
+
+  f1 ~ |%108
+  f2 ~ f8 e ees d |%109
+  des1 |%110
+  r2. des4 \bar "||"%111
+  % Plus un ton
+  \key g \minor
+  g1 |%112
+  r2 g8 fis f e |%113
+  ees1 ~ |%114
+  ees2 ees8 e f fis |%115
+  g1 ~ |%116
+  g2 ~ g8 ges f e |%117
+  ees1 |%118
+  r2. ees4 \bar "||"%119
   \key a \minor
-  r1 |%112
-  r1 |%113
-  r1 |%114
-  r1 |%115
-  r1 |%116
-  r1 |%117
-  r1 |%118
-
-  r1 \bar "||"%119
-  \key b \minor
-  r1 |%120
-  r1 |%121
-  r1 | %122
-  r1 |%123
-  r1 |%124
-  r1 |%125
-  r1 |%126
-  r1 |%127
-  r1 |%128
-  r1 |%129
-  r1 |%130
-  r1 \bar "|."
-
-
+  a1 |%120
+  r2 a8 aes g fis |%121
+  f1 ~ |%122
+  f2. f4 |%123
+  a1 |%124
+  r2 a8 aes g fis |%125
+  f1 |%126
+  r2 f8 fis g gis |%127
+  a1 |%128
+  r2 a8 aes g fis |%129
+  a1 \bar "|."}
 }
 
 PartPFiveVoiceOne =  \relative fis'' { %Sax alto
@@ -436,41 +431,40 @@ PartPFiveVoiceOne =  \relative fis'' { %Sax alto
   r1 |%97
   r1 |%98
   r1 |%99
-  r1 |%100
-  r1 |%101
-  r1 |%102
-  r1 |%103
-  r1 |%104
-  r1 |%105
-  r1 |%106
-  r1 |%107
-  r1 |%108
-  r1 |%109
-  r1 |%110
-  r1 \bar "||"%111
-  \key e \minor
-  r1 |%112
-  r1 |%113
-  r1 |%114
-  r1 |%115
-  r1 |%116
-  r1 |%117
-  r1 |%118
-
-  r1 \bar "||"%119
-  \key fis \minor
-  r1 |%120
-  r1 |%121
-  r1 | %122
-  r1 |%123
-  r1 |%124
-  r1 |%125
-  r1 |%126
-  r1 |%127
-  r1 |%128
-  r1 |%129
-  r1 |%130
-  r1 \bar "|."
+  \transpose ees c {\relative c''{
+    c4 aes'8 bes ees, f ees f |%100
+  r8 aes bes ees, f ees f aes |%101
+  r8 aes bes ees, f des c des |%102
+  r8 aes' bes ees, f f bes aes |%103
+  r8 ees f c ees f aes aes |%104
+  r8 aes bes ees, f f bes bes |%105
+  r8 g bes c, f f bes aes |%106
+  r8 aes bes f aes aes f aes |%107
+  r8 aes bes ees, f f bes bes |%108
+  r8 f ees f bes aes f aes |%109
+  r8 aes bes ees, f aes f bes |%110
+  r8 aes bes ees, c' f, bes f \bar "||"%111
+  \key g \minor
+  r8 g bes ees, f f g bes |%112
+  r8 g bes ees, c' bes g bes  |%113
+  r8 g bes f ees f bes g |%114
+  r8 g bes ees, f f g bes |%115
+  r8 f bes ees, f f bes g |%116
+  r8 g bes ees, c bes' g bes |%117
+  r8 bes c g bes c bes c |%118
+  r8 bes c g bes c bes g \bar "||"%119
+  \key a \minor
+  r8 g a c, g' a c c |%120
+  r8 g a c, g' a c c |%121
+  r8 c a g c a g c |%122
+  r8 b a e g a c c |%123
+  r8 g a g c a g a |%124
+  r8 g a c, c' a g a |%125
+  r8 c, a' g c a g a |%126
+  r8 c, a' g c a g a |%127
+  r8 c, a' g c a g a |%128
+  r8 c, c' a c a g a |%129
+  a1 \bar "|."}}
 }
 
 PartPFiveVoiceTwo =  \relative b' { %Sax alto
@@ -635,7 +629,7 @@ PartPOneZeroVoiceOne =  \relative b' { %Trompette
   <e gis>1 | % 55
   \key a \major R1*7
   r4 b\ff e4. b8 |
-  c1 \bar "||"
+  cis1 \bar "||"
   r4 cis \f fis a | % 65
   cis4. b b4 ~ | % 66
   b4 b e4. b8 | % 67
@@ -645,72 +639,64 @@ PartPOneZeroVoiceOne =  \relative b' { %Trompette
   fis8 e d cis b a gis fis | % 71
   eis1 ~ | % 72
   eis4 r r2 \bar "||" % 73
-  R1  | %74
-
-  r1 | %75
-  r1|%76
-  r1 |%77
-  r1 |%78
-  r1 |%79
-  r1 |%80
-  r1 \bar "||"%81
+  fis2. gis4  | %74
+  gis4. fis8 fis2| %75
+  fis2 cis'2 ~ |%76
+  cis2. fis,4 |%77
+  fis2. gis4 |%78
+  gis4. fis8 fis2 |%79
+  fis2 cis'2 ~ |%80
+  cis1 \bar "||"%81
 
   % Pont
   \key g \minor
-  r1 |%82
-  r1 |%83
+  g4 r4 r4 r8 f8 |%82
+  g4 r2. |%83
 
-  r1 | %84
-  r1 | %85
-  r1 | %86
-  r1 | %87
-  r1 | %88
-  r1 | %89
-  r1 | %90
-  r1 | %91
-  r1 |%92
-  r1 |%93
-  r1 |%94
-  r1 |%95
-  r1 |%96
-  r1 |%97
-  r1 |%98
-  r1 |%99
-  r1 |%100
-  r1 |%101
-  r1 |%102
-  r1 |%103
-  r1 |%104
-  r1 |%105
-  r1 |%106
-  r1 |%107
-  r1 |%108
-  r1 |%109
-  r1 |%110
-  r1 \bar "||" %111
-  \key a \minor
-  r1 |%112
-  r1 |%113
-  r1 |%114
-  r1 |%115
-  r1 |%116
-  r1 |%117
-  r1 |%118
+  R1*5 |  %88
+  r4 c f c | %89
+  d1 | %90
+  R1*9 | %99
+  \transpose bes c {\relative c''' {
+    aes1 |%100
+    r2 c8 b bes a |%101
+    aes1 |%102
+    r2 aes8 a bes b |%103
+    c1 |%104
+    r2 c8 b bes a |%105
+    aes1 |%106
+    aes2 aes8 a bes b |%107
 
-  r1 \bar "||"%119
-  \key b \minor
-  r1 |%120
-  r1 |%121
-  r1 | %122
-  r1 |%123
-  r1 |%124
-  r1 |%125
-  r1 |%126
-  r1 |%127
-  r1 |%128
-  r1 |%129
-  r1 |%130
-  r1 \bar "|."
+    c1 ~ |%108
+    c2 b8 bes a aes |
+    aes1 |%110
+    r2. c4 \bar "||"%111
+    % Plus un ton
+    \key g \minor
+
+    d1 |%112
+    r2 d8 des c b |
+    bes 1 |%114
+    bes2 bes8 b c cis |
+
+    d1 ~ |%116
+    d2 d8 des c b |
+    bes1 ~ |%118
+    bes2. bes4 \bar "||"%119
+    % Plus un ton
+    \key a \minor
+    e1 ~ |%120
+    e2 e8 ees d des |
+    c1 ~ |%122
+    c2. c4 |
+    e1 ~ |%124
+    e2 e8 ees d des |
+    c1 ~ |%126
+    c2 c8 cis d dis |
+    e1 ~ |%128
+    e2 e8 ees d des |
+    e1  \bar "|."
+    }}
 
 }
 
@@ -1145,29 +1131,29 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     <e a>1 | % 71
     <c fis>1 ~ ~ | % 72
     <c fis>4 <a fis'> <a fis'>2 \bar "||" % 73
-    <g' b>1  | %74
+    e'2. fis4  | %74
 
     % Parties ajoutée 2015
-    r1 |%75
-    r1 |%76
-    r1 |%77
-    r1 |%78
-    r1 |%79
-    r1 |%80
-    r1 \bar "||"%81
+    fis4. e8 e2 |%75
+    e2 b'2 ~ |%76
+    b2. e,4 |%77
+    e2. fis4  |%78
+    fis4. e8 e2 |%79
+    e2 b'2~ |%80
+    b1 \bar "||"%81
 
     % Pont
     \key f \minor
     f'4 bes8 f8 aes8 bes8 f8 ees8 |%82
     % Couplet
-    f4 r2. |%83
-    r1 |%84
-    r1 |%85
-    r1 |%86
-    r1 |%87
-    r1 |%88
-    r1 |%89
-    r1 |%90
+    f8 f,8 bes f aes c aes f |%83
+    r8 c' bes f aes bes aes ees |%84
+    r8 aes bes f aes bes aes ees |%85
+    r8 aes bes ees, f aes ees f |%86
+    r8 f aes ees f aes f aes |%87
+    r8 aes bes ees, f aes ees f |%88
+    r8 bes ees f, bes g bes ees, |%89
+    r8 bes' c ees, f aes ees c' |%90
     r4 c4 f4 gis4 |%91
     c4. bes8 bes2 ~ |%92
     bes4 bes ees4. bes8 |%93
@@ -1212,8 +1198,7 @@ PartPTwoEightVoiceOne =  \relative c''' { %Violon I
     r2 f8 fis g gis |%127
     a1 |%128
     r2 a8 aes g fis |%129
-    f1 |%130
-    e2. ~ e8 e8 \bar "|."
+    e1 \bar "|."
 
   }
 
@@ -1310,19 +1295,29 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     <e a>1 | % 71
     <c fis>1 ~ ~ | % 72
     <c fis>4 <a fis'> <a fis'>2 \bar "||" % 73
-    <g' b>1 | %74
+    b2. b4 | %74
     % Ajout 2015
-    r1 * 7 \bar "||"%81
+    b4. b8 b2 |
+    c2 g'2 ~ |
+    g2. b,4 |
+    b2. b4 |
+    b4. b8 b2 |
+    c2 g2 ~ |
+    g1 \bar "||"%81
 
     % Pont
     \key f \minor
     f'4 bes8 f8 aes8 bes8 f8 ees8 |%82
     % Couplet
-    f4 r2. |%83
-
-    % A remplir
-    R1*7 |%90
-    <aes, c>1 |%91
+    f8 f8 bes f aes c aes f |%83
+    r8 c' bes f aes bes aes ees |%84
+    r8 aes bes f aes bes aes ees |%85
+    r8 aes bes ees, f aes ees f |%86
+    r8 f aes ees f aes f aes |%87
+    r8 aes bes ees, f aes ees f |%88
+    r8 bes ees f, bes g bes ees, |%89
+    r8 bes' c ees, f aes ees c' |%90
+    <aes c>1 |%91
     c2 des2 |%92
     <bes ees>1 |%93
     f1 |%94
@@ -1338,11 +1333,11 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     c1 |%104
     r2 c8 b bes a |%105
     aes1 |%106
-    aes2 c8 cis d ees |%107
+    aes2 aes8 a bes b |%107
 
-    e1 ~ |%108
-    e2 e8 ees d des |
-    c1 |%110
+    c1 ~ |%108
+    c2 b8 bes a aes |
+    aes1 |%110
     r2. c4 \bar "||"%111
     % Plus un ton
     \key g \minor
@@ -1368,8 +1363,7 @@ PartPTwoNineVoiceOne =  \relative a' { %Alto Violon II
     c2 c8 cis d dis |
     e1 ~ |%128
     e2 e8 ees d des |
-    c1 |%130
-    b2. ~ b8 b8 \bar "|."
+    c1  \bar "|."
 
   }
 
@@ -1481,44 +1475,43 @@ PartPThreeZeroVoiceOne =  \relative a { %Violoncelle
     c1 |%94
     c2 r4 c4 |%95
 
-    r1 |%96
-    r1 |%97
-    r1 |%98
-    r1 |%99
-    r1 |%100
-    r1 |%101
-    r1 |%102
-    r1 |%103
-    r1 |%104
-    r1 |%105
-    r1 |%106
-    r1 |%107
-    r1 |%108
-    r1 |%109
-    r1 |%110
-    r1 \bar "||"%111
+    f,1 ~ |%96
+    f1 |%97
+    ees1 ~  |%98
+    ees4 des4 des4. des8 |%99
+    c4 aes'8 bes ees, f ees f |%100
+    r8 aes bes ees, f ees f aes |%101
+    r8 aes bes ees, f des c des |%102
+    r8 aes' bes ees, f f bes aes |%103
+    r8 ees f c ees f aes aes |%104
+    r8 aes bes ees, f f bes bes |%105
+    r8 g bes c, f f bes aes |%106
+    r8 aes bes f aes aes f aes |%107
+    r8 aes bes ees, f f bes bes |%108
+    r8 f ees f bes aes f aes |%109
+    r8 aes bes ees, f aes f bes |%110
+    r8 aes bes ees, c' f, bes f \bar "||"%111
     \key g \minor
-    r1 |%112
-    r1 |%113
-    r1 |%114
-    r1 |%115
-    r1 |%116
-    r1 |%117
-    r1 |%118
-    r1 \bar "||"%119
+    r8 g bes ees, f f g bes |%112
+    r8 g bes ees, c' bes g bes  |%113
+    r8 g bes f ees f bes g |%114
+    r8 g bes ees, f f g bes |%115
+    r8 f bes ees, f f bes g |%116
+    r8 g bes ees, c bes' g bes |%117
+    r8 bes c g bes c bes c |%118
+    r8 bes c g bes c bes g \bar "||"%119
     \key a \minor
-    r1 |%120
-    r1 |%121
-    r1 |%122
-    r1 |%123
-    r1 |%124
-    r1 |%125
-    r1 |%126
-    r1 |%127
-    r1 |%128
-    r1 |%129
-    r1 |%130
-    r1 \bar "|."
+    r8 g a c, g' a c c |%120
+    r8 g a c, g' a c c |%121
+    r8 c a g c a g c |%122
+    r8 b a e g a c c |%123
+    r8 g a g c a g a |%124
+    r8 g a c, c' a g a |%125
+    r8 c, a' g c a g a |%126
+    r8 c, a' g c a g a |%127
+    r8 c, a' g c a g a |%128
+    r8 c, c' a c a g a |%129
+    a1 \bar "|."
 
   }
 
@@ -1627,7 +1620,7 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
     f8 f r f f f r f |%97
     f8 f r f f f r f |%98
     des8 des r des des des r des |%99
-    c8 c c c c c c c |%100
+    f8 f f f f f f f |%100
     f8 f f f f e ees d |%101
     des8 des des des des des des des |%102
     des8 des des des des d ees e |%103
@@ -1636,36 +1629,35 @@ PartPThreeOneVoiceOne =  \relative d, { %Contrebasse
     des8 des des des des des des des | %106
     des8 des des des des d ees e |%107
     % Plus un ton -> Annulation changement de tonalité ici
-    f8 f f f f f f f |%108
+    f8 f f e f f f f |%108
     f8 f f f f fes ees d |%109
-    des8 des des des des des des des |%110
-    des8 des des des des des des4 \bar "||"%111
+    des8 des des bes des des des des |%110
+    des8 des des des des ees f ges \bar "||"%111
     % Nouveau changement de tonalité ici : plus un ton
     \key g \minor
-    g8 g g g g g g g |%112
+    g8 g g fis g g g g |%112
     g8 g g g g ges f e |%113
-    ees8 ees ees ees ees ees ees ees |%114
+    ees8 ees ees d ees ees ees ees |%114
     ees8 ees ees ees ees e f fis |%115
     % Plus un ton : Non pas ici
     g8 g g g g g g g |%116
     g8 g g g g ges f e |%117
     ees8 ees ees ees ees ees ees ees |%118
-    ees8 ees ees ees ees ees ees4 \bar "||"%119
+    ees8 ees ees ees ees f g aes \bar "||"%119
     % Mais ici : plus un ton
     \key a \minor
-    a8 a a a a a a a |%120
+    a8 a a g a a a a |%120
     a8 a a a a aes g ges |%121
     f8 f f f f f f f|%122
-    f8 f f f f f f4 |%123
+    f8 f f f f ges g aes |%123
 
-    a8 a a a a a a a |%124
+    a8 a a g a a a a |%124
     a8 a a a a aes g ges |%125
-    f8 f f f f f f f |%126
+    f8 f f ees f f f f |%126
     f8 f f f f fis g gis |%127
-    a8 a a a a a a a |%128
+    a8 a a g a a a a |%128
     a8 a a a a aes g ges |%129
-    f8 f f f f f f f|%130
-    e8 e e e e e e e \bar "|."
+    f1 \bar "|."
 
   }
 
@@ -1801,4 +1793,4 @@ bassPart = \new Staff <<
 }
 
  % Parties séparées
-%\include "GenSepPart.ly"
+\include "GenSepPart.ly"

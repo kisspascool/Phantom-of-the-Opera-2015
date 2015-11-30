@@ -1,22 +1,4 @@
 \book {
-  \bookOutputName "pdf/Piccolo"
-  \paper {
-    #(set-paper-size "a4")
-  }
-  \score {
-    <<
-    \new Staff
-    <<
-    \set Staff.instrumentName = "Piccolo"
-    \new Voice {\PartPOneVoiceOne}
-    \new Voice {\PartTrack}
-    >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
-  }
-}
-
-\book {
   \bookOutputName "pdf/Flute"
   \paper {
     #(set-paper-size "a4")
@@ -31,7 +13,7 @@
     \new Voice {\PartTrack}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -49,7 +31,7 @@
     \new Voice {\PartTrack}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -68,27 +50,10 @@
     \new Voice {\PartTrack}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
-\book {
-  \bookOutputName "pdf/Tenor Sax"
-  \paper {
-    #(set-paper-size "a4")
-  }
-  \score {
-    <<
-    \new Staff
-    <<
-    \set Staff.instrumentName = "Tenor Sax"
-    \new Voice {\PartPSixVoiceOne}
-    \new Voice {\PartTrack}
-    >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
-  }
-}
 
 \book {
   \bookOutputName "pdf/Trumpet"
@@ -105,46 +70,7 @@
     \new Voice {\PartTrack}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
-  }
-}
-
-\book {
-  \bookOutputName "pdf/Horn F"
-  \paper {
-    #(set-paper-size "a4")
-  }
-  \score {
-    <<
-    \new Staff
-    <<
-    \set Staff.instrumentName = "Horn F"
-    \new Voice {\voiceOne \PartPOneOneVoiceOne}
-    \new Voice {\voiceTwo \PartPOneOneVoiceTwo}
-    \new Voice {\PartTrack}
-    >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
-  }
-}
-
-
-
-\book {
-  \bookOutputName "pdf/Tuba"
-  \paper {
-    #(set-paper-size "a4")
-  }
-  \score {
-    <<
-    \new Staff
-    <<
-    \set Staff.instrumentName = "Tuba"
-    \new Voice {\PartPOneFiveVoiceOne}
-    \new Voice {\PartTrack}
-    >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -163,7 +89,7 @@
     \new Voice {\PartTrack}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -199,74 +125,25 @@
     \new Voice {\PartTrack}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
+
 \book {
-  \bookOutputName "pdf/Piano"
+  \bookOutputName "pdf/Basse"
   \paper {
     #(set-paper-size "a4")
   }
   \score {
     <<
-    \new PianoStaff <<
-    \set PianoStaff.instrumentName = "Piano"
-    \set PianoStaff.midiInstrument = #"acoustic grand"
-    \context Staff = "1" <<
-    \context Voice = "Track" {\PartTrack}
-    \context Voice = "PartPOneEightVoiceOne" {\PartPOneEightVoiceOne }
-
-    >> \context Staff = "2" <<
-    \context Voice = "PartPOneEightVoiceFive" {\PartPOneEightVoiceFive }
-    >>
-    >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
-  }
-}
-
-\book {
-  \bookOutputName "pdf/Timpani"
-  \paper {
-    #(set-paper-size "a4")
-  }
-  \score {
+    \new Staff
     <<
-    \new Staff <<
-    \set Staff.instrumentName = "Timpani"
-    \set Staff.midiInstrument = #"timpani"
-    \context Staff <<
-    \context Voice = "Track" {\PartTrack}
-    \context Voice = "PartPOneSixVoiceOne" { \PartPOneSixVoiceOne }
+    \set Staff.instrumentName = "Basse"
+    \new Voice {\PartPThreeOneVoiceOne}
+    \new Voice {\PartTrack}
     >>
     >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
-  }
-}
-
-\book {
-  \bookOutputName "pdf/Percussion"
-  \paper {
-    #(set-paper-size "a4")
-  }
-  \score {
-    <<
-
-    \new DrumStaff <<
-    \set DrumStaff.instrumentName = "Percussion"
-    %\set DrumStaff.shortInstrumentName = "Percu."
-    \set DrumStaff.midiInstrument = "drums"
-
-    %\new DrumVoice = "PartPThreeTwoVoiceOne" {\voiceOne \CrashC }
-    \new DrumVoice {\PartTrack}
-    \new DrumVoice = "BassD" { \voiceOne \BassD }
-          \new DrumVoice = "HighH" { \voiceTwo \HighH }
-          \new DrumVoice = "Cymbales" { \voiceThree \Cymbales }
-           \new DrumVoice = "TomD" { \voiceFour \TomD }
-    >>
-    >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
